@@ -26,8 +26,6 @@ classes: wide
 </div>
 
 <ul>
-  <li>Coursework includes analytics, music industry strategy, immersive audio, and emerging media.</li>
-  <li>Research interests: recommendation systems, listening behaviour, and creative tech.</li>
   <li>Awarded Global Citizen Scholarship and Cuppy Scholarship.</li>
 </ul>
 
@@ -57,7 +55,6 @@ classes: wide
 
 <ul>
   <li>Majors in Accounting and Development Studies.</li>
-  <li>Graduated with distinction.</li>
 </ul>
 
 </div>
