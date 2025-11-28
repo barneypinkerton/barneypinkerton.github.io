@@ -16,10 +16,8 @@
 title: "Barney Pinkerton"
 email: ""  # or put your email here if you want it public
 description: >-
-  Former financial crime analytics professional now pivoting into music business
-  and music technology. Currently a Music Business & Music Technology master’s
-  student at NYU (Global Citizen Scholar + Cuppy Scholar), exploring how data,
-  machine learning and listening behaviour shape music discovery and creative work.
+  Music Business & Music Tech @NYU
+  Former fin-crime analytics @CBA
 twitter_username: ""
 github_username: "barneypinkerton"
 minimal_mistakes_skin: default
@@ -60,7 +58,7 @@ plugins:
 
 author:
   name   : "Barney Pinkerton"
-  avatar : "/assets/images/bio-photo.jpg"  # you can replace this image later
+  avatar : "/assets/images/bio-pic.png"  # you can replace this image later
   bio    : "Former financial crime analytics professional, now a Music Business & Music Technology master’s student at NYU (Global Citizen Scholar + Cuppy Scholar), working at the intersection of music, data, ML and listening behaviour."
   links:
     - label: "Email"
