@@ -16,10 +16,18 @@ classes: wide
   background: #fafafa;
   border-radius: 6px;
 ">
-### Discogs ML Recommender  
-**Python · Machine Learning · Discogs API**
 
-A recommendation system that ingests the Discogs data dump and API to suggest vinyl records based on my collection, wantlist, label affinities, and listening behaviour.
+### Discogs ML Recommender  
+
+<p style="margin: 0 0 0.75rem 0;">
+  <span class="skill-badge">Python</span>
+  <span class="skill-badge">Machine Learning</span>
+  <span class="skill-badge">Discogs API</span>
+  <span class="skill-badge">SQLite</span>
+</p>
+
+A recommendation system that ingests the Discogs data dump and API to suggest vinyl
+records based on my collection, wantlist, label affinities, and listening behaviour.
 
 - Parses Electronic releases into SQLite and engineers features for labels, sub-labels, aliases, and release year.  
 - Scores candidate records using a custom weighting system tailored for crate-digging.  
@@ -38,8 +46,15 @@ A recommendation system that ingests the Discogs data dump and API to suggest vi
   background: #fafafa;
   border-radius: 6px;
 ">
+
 ### Apple Music Listening Insights  
-**Tableau · SQLite · Automation**
+
+<p style="margin: 0 0 0.75rem 0;">
+  <span class="skill-badge">Tableau</span>
+  <span class="skill-badge">SQLite</span>
+  <span class="skill-badge">Automation</span>
+  <span class="skill-badge">Data Engineering</span>
+</p>
 
 End-to-end pipeline and dashboard for analysing my Apple Music listening habits over time.
 
@@ -60,10 +75,18 @@ End-to-end pipeline and dashboard for analysing my Apple Music listening habits 
   background: #fafafa;
   border-radius: 6px;
 ">
-### Transaction Risk Prediction Model  
-**Python · Financial Crime Analytics · Predictive Modelling**
 
-A finance-focused predictive ML model designed to score and prioritise potentially suspicious transactions in a banking environment.
+### Transaction Risk Prediction Model  
+
+<p style="margin: 0 0 0.75rem 0;">
+  <span class="skill-badge">Python</span>
+  <span class="skill-badge">Pandas</span>
+  <span class="skill-badge">Scikit-learn</span>
+  <span class="skill-badge">Financial Crime Analytics</span>
+</p>
+
+A finance-focused predictive ML model designed to score and prioritise potentially suspicious
+transactions in a banking environment.
 
 - Uses historical transaction behaviour, peer-group analysis, and engineered risk features to flag anomalous activity.  
 - Incorporates model monitoring, threshold tuning, and post-model explainability for compliance teams.  
