@@ -16,7 +16,6 @@ classes: wide
   background: #fafafa;
   border-radius: 6px;
 ">
-
 ### Discogs ML Recommender  
 **Python · Machine Learning · Discogs API**
 
@@ -39,7 +38,6 @@ A recommendation system that ingests the Discogs data dump and API to suggest vi
   background: #fafafa;
   border-radius: 6px;
 ">
-
 ### Apple Music Listening Insights  
 **Tableau · SQLite · Automation**
 
@@ -62,7 +60,6 @@ End-to-end pipeline and dashboard for analysing my Apple Music listening habits 
   background: #fafafa;
   border-radius: 6px;
 ">
-
 ### Transaction Risk Prediction Model  
 **Python · Financial Crime Analytics · Predictive Modelling**
 
