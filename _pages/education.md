@@ -17,7 +17,7 @@ classes: wide
 <div style="display:flex; align-items:center; gap:16px; margin-bottom:10px;">
   <img src="/assets/images/education/nyu-logo.png" alt="NYU Logo" style="height:50px;">
   <div>
-    <h2 style="margin:0;">Music Business, Music Technology (M.A.)</h2>
+    <h2 style="margin:0;">Music Business, Music Technology Concentration (M.A.)</h2>
     <strong>
       <a href="https://www.nyu.edu/" target="_blank">New York University</a>
     </strong>
@@ -49,7 +49,7 @@ classes: wide
     <strong>
       <a href="https://www.unsw.edu.au/" target="_blank">University of New South Wales</a>
     </strong>
-    <div style="color:#666; font-size:0.95em;">2018 – 2021 · GPA: 3.43</div>
+    <div style="color:#666; font-size:0.95em;">2017 – 2021 · GPA: 3.43</div>
   </div>
 </div>
 
