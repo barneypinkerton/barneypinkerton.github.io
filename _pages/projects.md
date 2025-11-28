@@ -5,8 +5,6 @@ layout: single
 classes: wide
 ---
 
-## Projects
-
 Below is a selection of data, music-tech, and analytics projects I’ve built.
 
 ---
