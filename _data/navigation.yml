@@ -1,10 +1,11 @@
 main:
   - title: "Projects"
-    url: /projects/
+    url: /projects/  
+  - title: "Writing"
+    url: /writing/
   - title: "Experience"
     url: /experience/
   - title: "Education"
     url: /education/
-  - title: "Writing"
-    url: /writing/
+
     
