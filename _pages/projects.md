@@ -11,7 +11,7 @@ Below is a selection of data, music-tech, and analytics projects I’ve built.
 
 ---
 
-<div style="
+<div markdown="1" style="
   border-left: 4px solid #3366FF;
   padding: 20px;
   margin-bottom: 32px;
@@ -34,7 +34,7 @@ A recommendation system that ingests the Discogs data dump and API to suggest vi
 
 ---
 
-<div style="
+<div markdown="1" style="
   border-left: 4px solid #22A779;
   padding: 20px;
   margin-bottom: 32px;
@@ -57,7 +57,7 @@ End-to-end pipeline and dashboard for analysing my Apple Music listening habits 
 
 ---
 
-<div style="
+<div markdown="1" style="
   border-left: 4px solid #8B5CF6;
   padding: 20px;
   margin-bottom: 32px;
