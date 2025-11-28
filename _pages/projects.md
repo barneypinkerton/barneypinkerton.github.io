@@ -5,7 +5,7 @@ layout: single
 classes: wide
 ---
 
-Below is a selection of data, music-tech, and analytics projects I’ve built.
+*Below is a selection of data, music-tech, and analytics projects I’ve built.*
 
 ---
 
@@ -56,22 +56,22 @@ End-to-end pipeline and dashboard for analysing my Apple Music listening habits 
 ---
 
 <div markdown="1" style="
-  border-left: 4px solid #8B5CF6;
+  border-left: 4px solid #0F766E;
   padding: 20px;
   margin-bottom: 32px;
   background: #fafafa;
   border-radius: 6px;
 ">
 
-### Additional Projects Coming Soon  
-**Music Tech · Data Storytelling · Creative Coding**
+### Transaction Risk Prediction Model  
+**Python · Financial Crime Analytics · Predictive Modelling**
 
-More work is being prepared for this portfolio, including:
+A finance-focused predictive ML model designed to score and prioritise potentially suspicious transactions in a banking environment.
 
-- NYU Music Tech coursework  
-- Audio-analysis experiments  
-- DJ-tools and creative-tech prototypes  
-- Visual analytics dashboards  
-- ML models exploring listener behaviour  
+- Uses historical transaction behaviour, peer-group analysis, and engineered risk features to flag anomalous activity.  
+- Incorporates model monitoring, threshold tuning, and post-model explainability for compliance teams.  
+- Designed as a modular pipeline suitable for integration into AML/CTF workflows.
+
+[View on GitHub](https://github.com/barneypinkerton/finance-ml-placeholder){: .btn .btn--primary }
 
 </div>
