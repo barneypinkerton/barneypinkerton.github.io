@@ -41,7 +41,7 @@ classes: wide
 
 <!-- CARD 2: Oxfam Australia -->
 <div style="
-  border-left: 4px solid #E63946;
+  border-left: 4px solid #78BE20;
   padding: 20px;
   margin-bottom: 40px;
   background: #fafafa;
