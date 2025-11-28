@@ -111,3 +111,7 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+# Add custom scripts
+scripts:
+  - assets/js/external-links.js
