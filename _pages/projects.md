@@ -33,8 +33,7 @@ vinyl records based on my collection, wantlist, labels, and listening habits.
 - Scores candidate records using a custom weighting system tuned for crate-digging use cases.
 - Designed to surface deep-catalog label/artist connections rather than obvious chart picks.
 
-[View on GitHub](https://github.com/YOUR_USERNAME/YOUR_DISCOGS_REPO){: .btn .btn--primary }
-[Project README](https://github.com/YOUR_USERNAME/YOUR_DISCOGS_REPO#readme){: .btn .btn--inverse }
+[View on GitHub](https://github.com/barneypinkerton){: .btn .btn--primary }
 
 </div>
 
@@ -63,38 +62,7 @@ over time, from daily ingestion to visual analytics.
 - Data model tracks artist, genre, time of day, discovery vs repeat listening, and more.
 - Tableau dashboards explore streaks, seasonal patterns, and “discovery vs comfort listening”.
 
-[View Tableau dashboard](https://public.tableau.com/views/YOUR_DASHBOARD_ID){: .btn .btn--primary }
-[Pipeline / code](https://github.com/YOUR_USERNAME/YOUR_APPLEMUSIC_REPO){: .btn .btn--inverse }
-
-</div>
-
----
-
-<!-- CARD 3: Financial Crime Analytics Tools (CBA-safe summary) -->
-
-<div style="
-  border-left: 4px solid #FFCC00;
-  padding: 20px;
-  margin-bottom: 32px;
-  background: #fafafa;
-  border-radius: 6px;
-">
-
-### Financial Crime Analytics Toolkit (Conceptual)
-
-<div style="color:#666; font-size:0.95em; margin-bottom:8px;">
-  SAS · SQL · Python · Banking AML/CTF
-</div>
-
-A conceptual/obfuscated version of tools I build professionally at CBA, focused
-on explainable rule logic and transparent analytics (no confidential data).
-
-- Template rule framework demonstrating how to structure, log, and monitor AML/CTF scenarios.
-- Example notebooks for rule tuning, threshold testing, and population stability.
-- Emphasis on clear communication of risk logic for non-technical stakeholders.
-
-[Code / templates](https://github.com/YOUR_USERNAME/YOUR_FC_ANALYTICS_REPO){: .btn .btn--primary }
-[Concept note](https://github.com/YOUR_USERNAME/YOUR_FC_ANALYTICS_REPO/docs){: .btn .btn--inverse }
+[View Tableau dashboard](https://public.tableau.com/app/profile/barney.pinkerton/viz/AppleMusicDashboard_17602778655540/WeeklyTrends){: .btn .btn--primary }
 
 </div>
 
