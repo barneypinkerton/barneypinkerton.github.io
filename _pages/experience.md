@@ -49,7 +49,7 @@ classes: wide
 ">
 
 <div style="display:flex; align-items:center; gap:16px; margin-bottom:10px;">
-  <img src="/assets/images/experience/oxfam-logo.png" alt="Oxfam Logo" style="height:50px;">
+  <img src="/assets/images/experience/oxfamaus-logo.png" alt="Oxfam Logo" style="height:50px;">
   <div>
     <h2 style="margin:0;">Community Engagement & Fundraising</h2>
     <strong>
@@ -81,7 +81,7 @@ classes: wide
 ">
 
 <div style="display:flex; align-items:center; gap:16px; margin-bottom:10px;">
-  <img src="/assets/images/experience/xtv-logo.png" alt="XT Ventures Logo" style="height:50px;">
+  <img src="/assets/images/experience/xtvent-logo.png" alt="XT Ventures Logo" style="height:50px;">
   <div>
     <h2 style="margin:0;">Venture Research & Strategy Intern</h2>
     <strong>
