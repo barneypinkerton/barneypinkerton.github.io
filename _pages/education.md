@@ -5,13 +5,27 @@ layout: single
 classes: wide
 ---
 
-## Music Busines, Music Technology Concentration (M.A.)
-**New York Univeristy**
-- 3.92 GPA
-- Coursework includes analytics, music industry strategy, immersive audio, and emerging media.
+## Music Business, Music Technology Concentration (M.A.)
+
+<div style="display:flex;align-items:center;gap:12px;margin-bottom:6px;">
+  <img src="/assets/images/education/nyu-logo.png" alt="NYU Logo" style="height:40px;">
+  <strong><a href="https://www.nyu.edu/">New York University</a></strong>
+</div>
+
+*2025 – Present · GPA: 3.92*
+
+- Coursework includes analytics, music industry strategy, immersive audio, and emerging media.  
 - Research interests: recommendation systems, listening behaviour, and creative tech.
 
-## Commerce (B.A.), Arts (B.A.)
-**University of New South Wales**
-- 3.43 GPA
-- Majors: Accounting and Development Studies
+---
+
+## Commerce (B.Com), Arts (B.A.)
+
+<div style="display:flex;align-items:center;gap:12px;margin-bottom:6px;">
+  <img src="/assets/images/education/unsw-logo.png" alt="UNSW Logo" style="height:40px;">
+  <strong><a href="https://www.unsw.edu.au/">University of New South Wales</a></strong>
+</div>
+
+*2018 – 2021 · GPA: 3.43*
+
+- Majors: Accounting and Development Studies.
