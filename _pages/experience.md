@@ -85,7 +85,7 @@ classes: wide
   <div>
     <h2 style="margin:0;">Venture Research & Strategy Intern</h2>
     <strong>
-      <a href="https://www.xtventures.vc/" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.linkedin.com/company/xt-ventures/" target="_blank" rel="noopener noreferrer">
         XT Ventures
       </a>
     </strong>
