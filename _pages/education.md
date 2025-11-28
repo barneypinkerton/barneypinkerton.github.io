@@ -8,7 +8,7 @@ classes: wide
 ## Music Business, Music Technology Concentration (M.A.)
 
 <div style="display:flex;align-items:center;gap:12px;margin-bottom:6px;">
-  <img src="/assets/images/nyulogo.png" alt="NYU Logo" style="height:40px;">
+  <img src="/assets/images/education/nyulogo.webp" alt="NYU Logo" style="height:40px;">
   <strong><a href="https://www.nyu.edu/">New York University</a></strong>
 </div>
 
@@ -22,7 +22,7 @@ classes: wide
 ## Commerce (B.Com), Arts (B.A.)
 
 <div style="display:flex;align-items:center;gap:12px;margin-bottom:6px;">
-  <img src="/assets/images/unswlogo.png" alt="UNSW Logo" style="height:40px;">
+  <img src="/assets/images/education/unswlogo.webp" alt="UNSW Logo" style="height:40px;">
   <strong><a href="https://www.unsw.edu.au/">University of New South Wales</a></strong>
 </div>
 
