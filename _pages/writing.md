@@ -23,7 +23,7 @@ classes: wide
   Essay · 2024
 </div>
 
-<p style="margin-bottom:12px;">
+<p style="margin-bottom:10px;">
   “This is where you put a short excerpt — one or two sentences that capture the voice
   and idea of the piece. It should be enough to make someone want to click through and
   keep reading…”
@@ -51,9 +51,11 @@ classes: wide
   Creative writing · 2023
 </div>
 
-<p style="margin-bottom:12px;">
-  “Open on an image or line that sets the mood of the piece. This excerpt can be the
-  first paragraph or a favourite passage that stands on its own…”
+<p style="margin-bottom:10px;">
+  “These venues not only provide spaces for artists to preform, but are immersive environments that merge
+   architecture, sound, food and art to provide a uniquely holistic experience to the point
+   where audiences attend not only for the performances but to experience the aesthetic
+   of the venue as well.”
 </p>
 
 <a href="/assets/writing/NYU Music Business Admission Essay.pdf" target="_blank" rel="noopener noreferrer">
@@ -78,7 +80,7 @@ classes: wide
   Research / course paper · 2022
 </div>
 
-<p style="margin-bottom:12px;">
+<p style="margin-bottom:10px;">
   “Use this space to briefly set up the argument or question you’re exploring — what the
   paper is about, why it matters, and what angle you’re taking…”
 </p>
