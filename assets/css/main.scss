@@ -4,4 +4,59 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
-@import "custom";
+
+/* =============================
+   Projects page layout tweaks
+   ============================= */
+
+.page__content .page__lead {
+  margin-bottom: 1.25rem;   /* reduce gap under the intro line */
+}
+
+.page__content .project-card {
+  margin-top: 1rem;         /* tighten space above each card */
+}
+
+/* =============================
+   Project cards
+   ============================= */
+
+.project-card {
+  background: #fafafa;
+  border-left: 4px solid #3366ff;
+  padding: 20px 24px;
+  border-radius: 6px;
+  box-shadow: 0 3px 8px rgba(15, 23, 42, 0.04);
+  margin-bottom: 20px;
+}
+
+/* Colour variants for the left border */
+.project-card--green {
+  border-left-color: #22a779;
+}
+
+.project-card--teal {
+  border-left-color: #07c7e6;
+}
+
+/* =============================
+   Skill badges
+   ============================= */
+
+.skill-row {
+  margin: 0 0 0.75rem 0;
+}
+
+.skill-badge {
+  display: inline-block;
+  background: #eef2ff;
+  color: #3730a3;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  border: 1px solid #c7d2fe;
+  white-space: nowrap;
+}
