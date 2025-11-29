@@ -60,3 +60,20 @@
   border: 1px solid #c7d2fe;
   white-space: nowrap;
 }
+
+/* --- Make project cards wider (full content width) --- */
+
+.page__content {
+  max-width: 100%;     /* Allow full container width */
+}
+
+.project-card {
+  width: 100%;         /* Ensure cards expand fully */
+  padding: 28px 32px;  /* Slightly wider padding for a chunky feel */
+}
+
+/* Optional: tighten spacing under the intro text */
+.page__content .page__lead {
+  margin-bottom: 1rem;
+}
+
