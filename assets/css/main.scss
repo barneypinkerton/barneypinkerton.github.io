@@ -63,17 +63,11 @@
 
 /* --- Make project cards wider (full content width) --- */
 
-.page__content {
-  max-width: 100%;     /* Allow full container width */
-}
-
 .project-card {
-  width: 100%;         /* Ensure cards expand fully */
-  padding: 28px 32px;  /* Slightly wider padding for a chunky feel */
+  background: #fff;
+  border-left-width: 6px;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
 }
 
-/* Optional: tighten spacing under the intro text */
-.page__content .page__lead {
-  margin-bottom: 1rem;
-}
 
