@@ -27,11 +27,9 @@
   border-radius: 10px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
 
-  /* make it feel like the Writing cards */
-  width: 200%;
-  box-sizing: border-box;
-  padding: 1.75rem 2.25rem;   // inner spacing
-  margin: 0 0 2rem 0;         // space between cards
+  /* make the card feel as wide as the writing cards */
+  padding: 1.75rem 2.25rem;      /* inner spacing */
+  margin: 0 -1.5rem 2rem;        /* pull card out to left/right, keep gap below */
 }
 
 /* Colour variants for the left border */
