@@ -22,12 +22,10 @@
    ============================= */
 
 .project-card {
-  background: #fafafa;
-  border-left: 4px solid #3366ff;
-  padding: 20px 24px;
-  border-radius: 6px;
-  box-shadow: 0 3px 8px rgba(15, 23, 42, 0.04);
-  margin-bottom: 20px;
+  background: #fff;
+  border-left-width: 6px;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
 }
 
 /* Colour variants for the left border */
@@ -59,15 +57,6 @@
   margin-bottom: 6px;
   border: 1px solid #c7d2fe;
   white-space: nowrap;
-}
-
-/* --- Make project cards wider (full content width) --- */
-
-.project-card {
-  background: #fff;
-  border-left-width: 6px;
-  border-radius: 10px;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
 }
 
 
