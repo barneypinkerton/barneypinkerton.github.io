@@ -56,7 +56,7 @@ classes: wide
   first paragraph or a favourite passage that stands on its own…”
 </p>
 
-<a href="/assets/writing/creative-2.pdf" target="_blank" rel="noopener noreferrer">
+<a href="/assets/writing/NYU Music Business Admission Essay.pdf" target="_blank" rel="noopener noreferrer">
   Read full piece &rarr;
 </a>
 
