@@ -66,7 +66,7 @@ permalink: /projects/
   </ul>
 
   <a class="btn btn--primary"
-     href="https://public.tableau.com/app/profile/barney.pinkerton"
+     href="https://public.tableau.com/app/profile/barnaby.pinkerton/viz/AppleMusicDashboard_17647709521790/WeeklyTrends"
      target="_blank"
      rel="noopener noreferrer">
     View Tableau dashboard
