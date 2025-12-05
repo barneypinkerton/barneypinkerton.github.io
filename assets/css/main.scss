@@ -14,25 +14,12 @@
   margin-bottom: 1.25rem;
 }
 
-/* Space between cards */
-.projects-page .list__item {
-  margin-bottom: 2rem;
-}
-
-/* Card styling */
+/* Add subtle "card" treatment to the existing archive items
+   WITHOUT changing their width or margins, so they match Writing */
 .projects-page .list__item .archive__item {
   background: #ffffff;
   border-radius: 12px;
-  border-left: 4px solid #0ea5e9; /* accent strip on the left */
-  padding: 1.5rem 1.75rem;
   box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05);
-}
-
-/* On larger screens, make the card wider by extending it to the right only */
-@media (min-width: 1024px) {
-  .projects-page .list__item .archive__item {
-    margin-right: -30rem;  /* pull the right edge out toward the page edge */
-  }
 }
 
 /* =============================
