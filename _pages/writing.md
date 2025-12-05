@@ -1,5 +1,5 @@
 ---
-title: "Projects"
+title: "Writing"
 permalink: /writing/
 layout: single
 classes: wide
