@@ -19,7 +19,7 @@ classes: wide projects-page
   box-shadow: 0 4px 14px rgba(0,0,0,0.06);
 ">
 
-<h2 style="margin-top:0;">Discogs Machine Learning Recommendation Algorithm</h2>
+<h2 style="margin-top:0;">Discogs Recommendation Algorithm</h2>
 <div style="color:#666; font-size:0.95em; margin-bottom:10px;">
   Machine Learning · 2025
 </div>
@@ -107,7 +107,7 @@ A personlised recommendation system built using the Discogs API to analyse my co
   <li>Interactive data storytelling</li>
 </ul>
 
-<a href="https://public.tableau.com/app/profile/YOUR_TABLEAU_USERNAME" target="_blank" rel="noopener noreferrer">
+<a href="https://public.tableau.com/app/profile/barnaby.pinkerton/viz/AppleMusicDashboard_17647709521790/AppleMusicDashboard?publish=yes" target="_blank" rel="noopener noreferrer">
   View dashboard on Tableau Public &rarr;
 </a>
 
