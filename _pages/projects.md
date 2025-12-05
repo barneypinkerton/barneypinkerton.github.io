@@ -25,7 +25,7 @@ classes: wide projects-page
 </div>
 
 <p>
-A personlised recommendation system built using the Discogs API to analyse my collection and wantlist, then branch out through connected labels and artists. The model focuses on pure Electronic releases, transforms metadata with TF-IDF and cosine similarity, and layers in a rarity score that boosts high-want/low-have records while down-weighting over-exposed ones. The result is a personalised engine for surfacing genuinely obscure vinyl I’m likely to enjoy.
+A personlised recommendation system built using the Discogs API to analyse my collection and wantlist, then branch out through connected labels and artists. The model focuses on pure Electronic releases, transforms metadata with TF-IDF and cosine similarity, and layers in a rarity score that boosts high-want/low-have records while down-weighting over-exposed ones. The result is a personalised engine for surfacing genuinely obscure (and hopefully cheap!) dance records I’m likely to enjoy.
 </p>
 
 <div style="
@@ -51,6 +51,7 @@ A personlised recommendation system built using the Discogs API to analyse my co
   <li>Graph-style feature engineering from label/artist relationships</li>
   <li>SQLite data modelling and optimisation</li>
   <li>Custom scoring logic for rarity weighting and feature scaling</li>
+  <li>LLM Prompt Engineering for quick iteration and scaling</li>
 </ul>
 
 <a href="https://github.com/YOUR_GITHUB_USERNAME/YOUR_DISCOGS_REPO" target="_blank" rel="noopener noreferrer">
@@ -77,7 +78,7 @@ A personlised recommendation system built using the Discogs API to analyse my co
 </div>
 
 <p>
-  A Tableau dashboard analysing long-term listening patterns across songs, artists,
+  A Tableau dashboard analysing listening patterns across songs, artists,
   albums, and genres. Includes dynamic parameters, ranking logic, calculated fields,
   and an integrated UX-focused layout for storytelling.
 </p>
@@ -100,7 +101,7 @@ A personlised recommendation system built using the Discogs API to analyse my co
 
 <ul style="margin-top: 8px; margin-bottom:14px; padding-left: 1.2rem;">
   <li>Tableau (parameters, LODs, dynamic sorting)</li>
-  <li>Python-based data preparation</li>
+  <li>Python and Script Editor based data preparation</li>
   <li>Time-series interpretation</li>
   <li>Dashboard UX design</li>
   <li>Interactive data storytelling</li>
