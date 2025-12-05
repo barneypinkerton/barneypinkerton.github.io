@@ -108,6 +108,7 @@ tag_archive:
   type: liquid
   path: /tags/
 
-# Add custom scripts
-scripts:
-  - assets/js/external-links.js
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
