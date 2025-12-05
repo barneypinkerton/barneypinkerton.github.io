@@ -9,58 +9,29 @@
    Projects page layout tweaks
    ============================= */
 
-.page__content .page__lead {
-  margin-bottom: 1.25rem;   /* reduce gap under the intro line */
-}
-
-.page__content .project-card {
-  margin-top: 1rem;         /* tighten space above each card */
+/* Reduce gap under the intro line on the Projects page */
+.projects-page .page__content .page__lead {
+  margin-bottom: 1.25rem;
 }
 
 /* =============================
-   Project cards
+   Project skill badges
    ============================= */
 
-.project-card {
-  background: #fff;
-  border-left-width: 6px;
-  border-radius: 10px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
-
-  /* make the card feel as wide as the writing cards */
-  padding: 1.75rem 2.25rem;      /* inner spacing */
-  margin: 0 -1.5rem 2rem;        /* pull card out to left/right, keep gap below */
+/* Wrapper for the badges row under each project excerpt */
+.projects-page .project-badges {
+  margin-top: 0.5rem;
 }
 
-/* Colour variants for the left border */
-.project-card--green {
-  border-left-color: #22a779;
-}
-
-.project-card--teal {
-  border-left-color: #07c7e6;
-}
-
-/* =============================
-   Skill badges
-   ============================= */
-
-.skill-row {
-  margin: 0 0 0.75rem 0;
-}
-
-.skill-badge {
+/* Individual pill-style badges */
+.projects-page .project-badge {
   display: inline-block;
-  background: #eef2ff;
-  color: #3730a3;
-  font-size: 0.75rem;
-  font-weight: 600;
-  padding: 4px 10px;
+  margin-right: 0.4rem;
+  margin-bottom: 0.3rem;
+  padding: 0.15rem 0.6rem;
   border-radius: 999px;
-  margin-right: 6px;
-  margin-bottom: 6px;
-  border: 1px solid #c7d2fe;
-  white-space: nowrap;
+  font-size: 0.75rem;
+  line-height: 1.3;
+  background: #f3f4f6;
+  border: 1px solid rgba(0, 0, 0, 0.06);
 }
-
-
