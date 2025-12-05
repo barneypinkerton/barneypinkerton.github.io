@@ -25,7 +25,7 @@ classes: wide projects-page
 </div>
 
 <p>
-A personlised recommendation system built using the Discogs API to analyse my collection and wantlist, then branch out through connected labels and artists. The model focuses on pure Electronic releases, transforms metadata with TF-IDF and cosine similarity, and layers in a rarity score that boosts high-want/low-have records while down-weighting over-exposed ones. The result is a personalised engine for surfacing genuinely obscure (and hopefully cheap!) dance records I’m likely to enjoy.
+A personlised recommendation system built using the Discogs API to analyse my collection and wantlist, then branch out through connected labels and artists. The model includes a desirability and rarity score that boosts high-want/low-have records while down-weighting over-exposed ones. The result is a personalised engine for surfacing genuinely obscure (and hopefully cheap!) dance records I’m likely to enjoy.
 </p>
 
 <div style="
@@ -50,8 +50,8 @@ A personlised recommendation system built using the Discogs API to analyse my co
   <li>Content-based recommender modelling (TF-IDF, cosine similarity)</li>
   <li>Graph-style feature engineering from label/artist relationships</li>
   <li>SQLite data modelling and optimisation</li>
-  <li>Custom scoring logic for rarity weighting and feature scaling</li>
-  <li>LLM Prompt Engineering for quick iteration and scaling</li>
+  <li>Custom scoring logic for weighting and feature scaling</li>
+  <li>LLM prompt engineering for quick iteration and scaling</li>
 </ul>
 
 <a href="https://github.com/YOUR_GITHUB_USERNAME/YOUR_DISCOGS_REPO" target="_blank" rel="noopener noreferrer">
@@ -79,7 +79,7 @@ A personlised recommendation system built using the Discogs API to analyse my co
 
 <p>
   A Tableau dashboard analysing listening patterns across songs, artists,
-  albums, and genres. Includes dynamic parameters, ranking logic, calculated fields,
+  albums and genres. Includes dynamic parameters, ranking logic, calculated fields
   and an integrated UX-focused layout for storytelling.
 </p>
 
@@ -133,7 +133,7 @@ A personlised recommendation system built using the Discogs API to analyse my co
 <p>
   A supervised machine learning classifier predicting customer conversion for term
   deposit campaigns. Includes preprocessing, feature engineering, model training,
-  evaluation (ROC-AUC, CV), and interpretation.
+  evaluation (ROC-AUC, CV) and interpretation.
 </p>
 
 <div style="
