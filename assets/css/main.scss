@@ -14,9 +14,28 @@
   margin-bottom: 1.25rem;
 }
 
+/* Make each project feel like a card (similar to Writing page) */
+.projects-page .list__item {
+  margin-bottom: 2rem; /* space between cards */
+}
+
+.projects-page .list__item .archive__item {
+  background: #ffffff;
+  border-radius: 12px;
+  border-left: 4px solid #0ea5e9; /* accent strip on the left */
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05);
+  margin: 0 -1.5rem; /* pull card slightly wider than text column */
+}
+
 /* =============================
-   Project skill badges
+   Project body & skill badges
    ============================= */
+
+/* Space between badges and the main project body text */
+.projects-page .project-body {
+  margin-top: 0.75rem;
+}
 
 /* Wrapper for the badges row under each project excerpt */
 .projects-page .project-badges {
