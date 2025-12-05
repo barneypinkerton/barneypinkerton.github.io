@@ -14,7 +14,7 @@
   margin-bottom: 1.25rem;
 }
 
-/* Make each project feel like a card (similar to Writing page) */
+/* Make each project feel like a card */
 .projects-page .list__item {
   margin-bottom: 2rem; /* space between cards */
 }
@@ -23,9 +23,9 @@
   background: #ffffff;
   border-radius: 12px;
   border-left: 4px solid #0ea5e9; /* accent strip on the left */
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 1.75rem;
   box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05);
-  margin: 0 -1.5rem; /* pull card slightly wider than text column */
+  /* IMPORTANT: no negative margins so it doesn't overlap the avatar */
 }
 
 /* =============================
