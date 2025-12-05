@@ -1,9 +1,8 @@
 ---
 layout: single
 title: "Discogs ML Recommender"
-excerpt:
+excerpt: "A recommendation system that ingests Discogs data to surface vinyl picks for deep crate-digging."
 date: 2024-01-01
-type: "Project · 2024"
 skills:
   - Python
   - Pandas
