@@ -1,6 +1,6 @@
 ---
 title: "Writing"
-permalink: /writing/
+permalink: /projects/
 layout: single
 classes: wide
 ---
