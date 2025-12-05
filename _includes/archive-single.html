@@ -20,17 +20,18 @@
 
     {%- comment -%}
     Title:
-    - For projects: plain text (no link)
+    - For projects (documents in the `projects` collection): plain text
     - For everything else: default linked title
     {%- endcomment -%}
     <h2 class="archive__item-title no_toc" itemprop="headline">
-      {% if page.collection == "projects" %}
+      {% if post.collection == "projects" %}
         {{ title }}
       {% else %}
         {% if post.link %}
           <a href="{{ post.link }}">{{ title }}</a>
           <a href="{{ post.url | relative_url }}" rel="permalink">
-            <i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span>
+            <i class="fas fa-link" aria-hidden="true" title="permalink"></i>
+            <span class="sr-only">Permalink</span>
           </a>
         {% else %}
           <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
@@ -41,16 +42,10 @@
     {% include page__meta.html type=include.type %}
 
     {%- comment -%}
-    Projects collection: show tech line (excerpt), badges, and FULL body
-    Other collections: keep default "excerpt only" behaviour
+    Projects: no excerpt line; show badges + full body.
+    Others: show the usual excerpt only.
     {%- endcomment -%}
-    {% if page.collection == "projects" %}
-
-      {% if post.excerpt %}
-        <p class="archive__item-excerpt" itemprop="description">
-          {{ post.excerpt | markdownify | strip_html }}
-        </p>
-      {% endif %}
+    {% if post.collection == "projects" %}
 
       {% if post.skills %}
         <div class="project-badges">
