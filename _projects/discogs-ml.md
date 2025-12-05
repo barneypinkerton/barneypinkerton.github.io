@@ -1,7 +1,6 @@
 ---
 layout: single
 title: "Discogs ML Recommender"
-excerpt: "Python · Machine Learning · Discogs API · SQLite · Pandas"
 date: 2024-01-01
 type: "Project · 2024"
 skills:
