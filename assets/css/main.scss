@@ -9,21 +9,17 @@
    Projects page layout tweaks
    ============================= */
 
-/* Give the right-hand content column a bit more width on this page */
-.projects-page .page__content {
-  max-width: 2000px;  /* default is ~800px; bump it up for wider cards */
-}
-
 /* Reduce gap under the intro line on the Projects page */
 .projects-page .page__content .page__lead {
   margin-bottom: 1.25rem;
 }
 
-/* Make each project feel like a card */
+/* Space between cards */
 .projects-page .list__item {
-  margin-bottom: 2rem; /* space between cards */
+  margin-bottom: 2rem;
 }
 
+/* Card styling */
 .projects-page .list__item .archive__item {
   background: #ffffff;
   border-radius: 12px;
@@ -32,11 +28,10 @@
   box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05);
 }
 
-/* On larger screens, gently pull the card wider inside the content column */
+/* On larger screens, make the card wider by extending it to the right only */
 @media (min-width: 1024px) {
   .projects-page .list__item .archive__item {
-    margin-left: -0.75rem;
-    margin-right: -0.75rem;
+    margin-right: -4rem;  /* pull the right edge out toward the page edge */
   }
 }
 
