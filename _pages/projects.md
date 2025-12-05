@@ -20,44 +20,24 @@ classes: wide projects-page
   box-shadow: 0 8px 18px rgba(0,0,0,0.03);
 ">
 
-<h2 style="margin-top:0;">Discogs Machine Learning Recommendation Algorithm</h2>
+## Discogs Machine Learning Recommendation Algorithm
 <div style="color:#666; font-size:0.95em; margin-bottom:10px;">
   Machine Learning · 2024
 </div>
 
-<p style="margin-bottom:14px;">
-  An end-to-end vinyl recommendation engine trained on the complete Discogs XML dump.
-  The system builds user taste profiles using genre and subgenre affinity, label clustering,
-  cosine similarity scoring, and rarity weighting to surface obscure, high-quality records.
-</p>
+A vinyl recommendation engine trained on the Discogs XML data dump, designed to surface rare and niche records based on personal taste, label ecosystems, and subgenre weighting. The pipeline covers ingestion, feature engineering, similarity scoring, and ranked outputs.
 
-<div style="
-  margin-top: 6px;
-  margin-bottom: 4px;
-  padding: 8px 14px;
-  border-radius: 999px;
-  background: #eef2f7;
-  display: inline-block;
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: .08em;
-  text-transform: uppercase;
-  color: #374151;
-">
-  Skills used
-</div>
+### Skills used
 
-<ul style="margin-top: 8px; margin-bottom:14px; padding-left: 1.2rem;">
-  <li>Python (Pandas, NumPy, Scikit-Learn)</li>
-  <li>XML ingestion and ETL pipeline architecture</li>
-  <li>Cosine similarity recommender modelling</li>
-  <li>SQLite database design and optimisation</li>
-  <li>Feature weighting and custom scoring system design</li>
-</ul>
+{% include badge.html label="Python" %}
+{% include badge.html label="Pandas" %}
+{% include badge.html label="Scikit-Learn" %}
+{% include badge.html label="SQLite" %}
+{% include badge.html label="Recommender Systems" %}
 
-<a href="https://github.com/YOUR_GITHUB_USERNAME/YOUR_DISCOGS_REPO" target="_blank" rel="noopener noreferrer">
-  View project on GitHub &rarr;
-</a>
+### Project links
+
+{% include badge.html label="GitHub Repo" url="https://github.com/YOUR_GITHUB_USERNAME/YOUR_DISCOGS_REPO" icon="fab fa-github" %}
 
 </div>
 
@@ -74,45 +54,24 @@ classes: wide projects-page
   box-shadow: 0 8px 18px rgba(0,0,0,0.03);
 ">
 
-<h2 style="margin-top:0;">Apple Music Listening Analytics Dashboard</h2>
+## Apple Music Listening Analytics Dashboard
 <div style="color:#666; font-size:0.95em; margin-bottom:10px;">
   Data Visualization · 2024
 </div>
 
-<p style="margin-bottom:14px;">
-  A multi-view Tableau dashboard analysing long-term listening habits across songs,
-  artists, albums, and genres. Features dynamic parameters, ranking logic, colour
-  system design, and interactive filters to reveal behavioural listening patterns
-  over time.
-</p>
+A Tableau Public dashboard exploring long-term listening habits across songs, artists, albums, and genres. Uses parameters, dynamic sorting, and calculated fields to highlight trends, heavy rotation periods, and shifts in taste over time.
 
-<div style="
-  margin-top: 6px;
-  margin-bottom: 4px;
-  padding: 8px 14px;
-  border-radius: 999px;
-  background: #eef2f7;
-  display: inline-block;
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: .08em;
-  text-transform: uppercase;
-  color: #374151;
-">
-  Skills used
-</div>
+### Skills used
 
-<ul style="margin-top: 8px; margin-bottom:14px; padding-left: 1.2rem;">
-  <li>Tableau (parameters, LODs, dynamic sorting)</li>
-  <li>Python-based data cleaning and transformation</li>
-  <li>Time-series and cohort-style analysis</li>
-  <li>Dashboard UX, layout and typography</li>
-  <li>Interactive data storytelling</li>
-</ul>
+{% include badge.html label="Tableau" %}
+{% include badge.html label="Data Cleaning" %}
+{% include badge.html label="Time-Series Analysis" %}
+{% include badge.html label="Dashboard Design" %}
+{% include badge.html label="Interactive Storytelling" %}
 
-<a href="https://public.tableau.com/app/profile/YOUR_TABLEAU_USERNAME" target="_blank" rel="noopener noreferrer">
-  View dashboard on Tableau Public &rarr;
-</a>
+### Project links
+
+{% include badge.html label="Tableau Public" url="https://public.tableau.com/app/profile/YOUR_TABLEAU_USERNAME" icon="fas fa-chart-bar" %}
 
 </div>
 
@@ -129,43 +88,23 @@ classes: wide projects-page
   box-shadow: 0 8px 18px rgba(0,0,0,0.03);
 ">
 
-<h2 style="margin-top:0;">Term Deposit Subscription Prediction Model</h2>
+## Term Deposit Subscription Prediction Model
 <div style="color:#666; font-size:0.95em; margin-bottom:10px;">
   Predictive Modelling · 2023
 </div>
 
-<p style="margin-bottom:14px;">
-  A supervised machine learning model predicting whether banking customers will subscribe
-  to a term deposit using demographic, behavioural, and campaign interaction features.
-  Includes preprocessing, feature engineering, model training, model comparison, and evaluation.
-</p>
+A supervised machine learning model predicting whether banking customers will subscribe to a term deposit using demographic, behavioural, and campaign interaction features. Includes full preprocessing, model training, comparison, and evaluation workflow.
 
-<div style="
-  margin-top: 6px;
-  margin-bottom: 4px;
-  padding: 8px 14px;
-  border-radius: 999px;
-  background: #eef2f7;
-  display: inline-block;
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: .08em;
-  text-transform: uppercase;
-  color: #374151;
-">
-  Skills used
-</div>
+### Skills used
 
-<ul style="margin-top: 8px; margin-bottom:14px; padding-left: 1.2rem;">
-  <li>Scikit-Learn (logistic regression, tree-based models)</li>
-  <li>Data preprocessing and feature engineering</li>
-  <li>Model validation (ROC-AUC, cross-validation)</li>
-  <li>Performance comparison and hyperparameter tuning</li>
-  <li>Deployment-ready Jupyter notebook workflow</li>
-</ul>
+{% include badge.html label="Scikit-Learn" %}
+{% include badge.html label="Feature Engineering" %}
+{% include badge.html label="Classification Models" %}
+{% include badge.html label="Model Evaluation" %}
+{% include badge.html label="Jupyter Notebooks" %}
 
-<a href="https://github.com/YOUR_GITHUB_USERNAME/YOUR_TERM_DEPOSIT_REPO" target="_blank" rel="noopener noreferrer">
-  View project on GitHub &rarr;
-</a>
+### Project links
+
+{% include badge.html label="GitHub Repo" url="https://github.com/YOUR_GITHUB_USERNAME/YOUR_TERM_DEPOSIT_REPO" icon="fab fa-github" %}
 
 </div>
