@@ -2,91 +2,124 @@
 title: "Projects"
 permalink: /projects/
 layout: single
-classes: wide
+classes: wide projects-page
 ---
 
-  *A selection of essays, creative pieces, and reflections on music, data, and culture. Each card includes a short excerpt — click through to read the full piece.*
+*A selection of technical and creative projects involving machine learning, data pipelines, dashboard analytics, and predictive modelling. Each card includes a short description, a skills snapshot, and a link to explore the full work.*
 
 ---
 
-<!-- CARD 1: Example essay -->
-<div style="
+<!-- ===========================================
+     CARD 1 — Discogs ML Algorithm
+=========================================== -->
+<div class="project-card" style="
   border-left: 4px solid #3366FF;
-  padding: 20px;
-  margin-bottom: 32px;
+  padding: 24px;
+  margin-bottom: 36px;
   background: #fafafa;
-  border-radius: 6px;
+  border-radius: 10px;
 ">
 
-<h2 style="margin-top:0;">Title of Essay #1</h2>
-<div style="color:#666; font-size:0.95em; margin-bottom:8px;">
-  Essay · 2024
+<h2 style="margin-top:0;">Discogs Machine Learning Recommendation Algorithm</h2>
+<div class="project-meta" style="color:#666; font-size:0.95em; margin-bottom:10px;">
+  Machine Learning · 2024
 </div>
 
-<p style="margin-bottom:10px;">
-  “This is where you put a short excerpt — one or two sentences that capture the voice
-  and idea of the piece. It should be enough to make someone want to click through and
-  keep reading…”
+<p style="margin-bottom:14px;">
+  An end-to-end vinyl recommendation engine trained on the complete Discogs XML dump.  
+  The system builds user taste profiles using genre + subgenre affinity, label clustering,  
+  cosine similarity scoring, and rarity weighting to surface obscure, high-quality records.
 </p>
 
-<a href="/assets/writing/essay-1.pdf" target="_blank" rel="noopener noreferrer">
-  Read full piece &rarr;
+<strong>Skills used:</strong>
+<ul style="margin-top:6px; margin-bottom:14px;">
+  <li>Python (Pandas, NumPy, Scikit-Learn)</li>
+  <li>XML ingestion + ETL pipeline architecture</li>
+  <li>Cosine similarity recommender modelling</li>
+  <li>SQLite database engineering</li>
+  <li>Feature weighting + custom scoring system design</li>
+</ul>
+
+<a href="https://github.com/USERNAME/REPO" target="_blank" rel="noopener noreferrer">
+  View project on GitHub &rarr;
 </a>
 
 </div>
 
 ---
 
-<!-- CARD 2: Creative writing -->
-<div style="
+<!-- ===========================================
+     CARD 2 — Apple Music Dashboard
+=========================================== -->
+<div class="project-card" style="
   border-left: 4px solid #FF7A59;
-  padding: 20px;
-  margin-bottom: 32px;
+  padding: 24px;
+  margin-bottom: 36px;
   background: #fafafa;
-  border-radius: 6px;
+  border-radius: 10px;
 ">
 
-<h2 style="margin-top:0;">Title of Creative Piece #2</h2>
-<div style="color:#666; font-size:0.95em; margin-bottom:8px;">
-  Creative writing · 2023
+<h2 style="margin-top:0;">Apple Music Listening Analytics Dashboard</h2>
+<div class="project-meta" style="color:#666; font-size:0.95em; margin-bottom:10px;">
+  Data Visualization · 2024
 </div>
 
-<p style="margin-bottom:10px;">
-  “These venues not only provide spaces for artists to preform, but are immersive environments that merge
-   architecture, sound, food and art to provide a uniquely holistic experience to the point
-   where audiences attend not only for the performances but to experience the aesthetic
-   of the venue as well.”
+<p style="margin-bottom:14px;">
+  A multi-view Tableau dashboard analysing long-term listening habits across songs,
+  artists, albums, and genres. Features dynamic parameters, ranking logic, colour
+  system design, and interactive user-driven filtering.
 </p>
 
-<a href="/assets/writing/NYU Music Business Admission Essay.pdf" target="_blank" rel="noopener noreferrer">
-  Read full piece &rarr;
+<strong>Skills used:</strong>
+<ul style="margin-top:6px; margin-bottom:14px;">
+  <li>Tableau (LOD expressions, parameters, dynamic filtering)</li>
+  <li>Python-based preprocessing (cleaning + transformation)</li>
+  <li>Time-series trend analysis</li>
+  <li>Dashboard UX and layout design</li>
+  <li>Interactive data storytelling</li>
+</ul>
+
+<a href="https://public.tableau.com/app/profile/USERNAME" target="_blank" rel="noopener noreferrer">
+  View dashboard on Tableau Public &rarr;
 </a>
 
 </div>
 
 ---
 
-<!-- CARD 3: Academic / course paper -->
-<div style="
+<!-- ===========================================
+     CARD 3 — Term Deposit ML Predictor
+=========================================== -->
+<div class="project-card" style="
   border-left: 4px solid #22A779;
-  padding: 20px;
-  margin-bottom: 32px;
+  padding: 24px;
+  margin-bottom: 36px;
   background: #fafafa;
-  border-radius: 6px;
+  border-radius: 10px;
 ">
 
-<h2 style="margin-top:0;">Title of Paper #3</h2>
-<div style="color:#666; font-size:0.95em; margin-bottom:8px;">
-  Research / course paper · 2022
+<h2 style="margin-top:0;">Term Deposit Subscription Prediction Model</h2>
+<div class="project-meta" style="color:#666; font-size:0.95em; margin-bottom:10px;">
+  Predictive Modelling · 2023
 </div>
 
-<p style="margin-bottom:10px;">
-  “Use this space to briefly set up the argument or question you’re exploring — what the
-  paper is about, why it matters, and what angle you’re taking…”
+<p style="margin-bottom:14px;">
+  A supervised machine learning model predicting whether customers will subscribe to a
+  bank term deposit using demographic, behavioural, and campaign interaction features.
+  Includes preprocessing, feature engineering, model training, and evaluation.
 </p>
 
-<a href="/assets/writing/paper-3.pdf" target="_blank" rel="noopener noreferrer">
-  Read full piece &rarr;
+<strong>Skills used:</strong>
+<ul style="margin-top:6px; margin-bottom:14px;">
+  <li>Scikit-Learn (logistic regression, tree ensembles)</li>
+  <li>Data preprocessing + feature engineering</li>
+  <li>Model validation (ROC-AUC, cross-validation)</li>
+  <li>Interpretability + reporting workflow</li>
+  <li>Deployment-ready Jupyter notebook structure</li>
+</ul>
+
+<a href="https://github.com/USERNAME/REPO" target="_blank" rel="noopener noreferrer">
+  View project on GitHub &rarr;
 </a>
 
 </div>
