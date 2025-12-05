@@ -6,6 +6,15 @@
 @import "minimal-mistakes";
 
 /* =============================
+   Projects page overall width
+   ============================= */
+
+/* Let the Projects layout use a wider page container than the default */
+.projects-page .page {
+  max-width: 1400px;  /* bump this up or down to taste (default is ~1200px) */
+}
+
+/* =============================
    Projects page layout tweaks
    ============================= */
 
