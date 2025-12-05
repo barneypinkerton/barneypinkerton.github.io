@@ -12,13 +12,7 @@ classes: wide projects-page
 <!-- ===========================================
      CARD 1 — Discogs ML Algorithm
 =========================================== -->
-<div class="project-card" style="
-  padding: 24px;
-  margin-bottom: 32px;
-  background: #fafafa;
-  border-radius: 10px;
-  box-shadow: 0 8px 18px rgba(0,0,0,0.03);
-">
+<div class="project-card">
 
 ## Discogs Machine Learning Recommendation Algorithm
 <div style="color:#666; font-size:0.95em; margin-bottom:10px;">
@@ -29,15 +23,23 @@ A vinyl recommendation engine trained on the Discogs XML data dump, designed to 
 
 ### Skills used
 
-{% include badge.html label="Python" %}
-{% include badge.html label="Pandas" %}
-{% include badge.html label="Scikit-Learn" %}
-{% include badge.html label="SQLite" %}
-{% include badge.html label="Recommender Systems" %}
+<div class="badge-row">
+  <span class="badge">Python</span>
+  <span class="badge">Pandas</span>
+  <span class="badge">Scikit-Learn</span>
+  <span class="badge">SQLite</span>
+  <span class="badge">Recommender Systems</span>
+</div>
 
 ### Project links
 
-{% include badge.html label="GitHub Repo" url="https://github.com/YOUR_GITHUB_USERNAME/YOUR_DISCOGS_REPO" icon="fab fa-github" %}
+<div class="badge-row">
+  <span class="badge badge--link">
+    <a href="https://github.com/YOUR_GITHUB_USERNAME/YOUR_DISCOGS_REPO" target="_blank" rel="noopener noreferrer">
+      GitHub Repo
+    </a>
+  </span>
+</div>
 
 </div>
 
@@ -46,13 +48,7 @@ A vinyl recommendation engine trained on the Discogs XML data dump, designed to 
 <!-- ===========================================
      CARD 2 — Apple Music Dashboard
 =========================================== -->
-<div class="project-card" style="
-  padding: 24px;
-  margin-bottom: 32px;
-  background: #fafafa;
-  border-radius: 10px;
-  box-shadow: 0 8px 18px rgba(0,0,0,0.03);
-">
+<div class="project-card">
 
 ## Apple Music Listening Analytics Dashboard
 <div style="color:#666; font-size:0.95em; margin-bottom:10px;">
@@ -63,15 +59,23 @@ A Tableau Public dashboard exploring long-term listening habits across songs, ar
 
 ### Skills used
 
-{% include badge.html label="Tableau" %}
-{% include badge.html label="Data Cleaning" %}
-{% include badge.html label="Time-Series Analysis" %}
-{% include badge.html label="Dashboard Design" %}
-{% include badge.html label="Interactive Storytelling" %}
+<div class="badge-row">
+  <span class="badge">Tableau</span>
+  <span class="badge">Data Cleaning</span>
+  <span class="badge">Time-Series Analysis</span>
+  <span class="badge">Dashboard Design</span>
+  <span class="badge">Interactive Storytelling</span>
+</div>
 
 ### Project links
 
-{% include badge.html label="Tableau Public" url="https://public.tableau.com/app/profile/YOUR_TABLEAU_USERNAME" icon="fas fa-chart-bar" %}
+<div class="badge-row">
+  <span class="badge badge--link">
+    <a href="https://public.tableau.com/app/profile/YOUR_TABLEAU_USERNAME" target="_blank" rel="noopener noreferrer">
+      Tableau Public
+    </a>
+  </span>
+</div>
 
 </div>
 
@@ -80,13 +84,7 @@ A Tableau Public dashboard exploring long-term listening habits across songs, ar
 <!-- ===========================================
      CARD 3 — Term Deposit ML Predictor
 =========================================== -->
-<div class="project-card" style="
-  padding: 24px;
-  margin-bottom: 32px;
-  background: #fafafa;
-  border-radius: 10px;
-  box-shadow: 0 8px 18px rgba(0,0,0,0.03);
-">
+<div class="project-card">
 
 ## Term Deposit Subscription Prediction Model
 <div style="color:#666; font-size:0.95em; margin-bottom:10px;">
@@ -97,14 +95,22 @@ A supervised machine learning model predicting whether banking customers will su
 
 ### Skills used
 
-{% include badge.html label="Scikit-Learn" %}
-{% include badge.html label="Feature Engineering" %}
-{% include badge.html label="Classification Models" %}
-{% include badge.html label="Model Evaluation" %}
-{% include badge.html label="Jupyter Notebooks" %}
+<div class="badge-row">
+  <span class="badge">Scikit-Learn</span>
+  <span class="badge">Feature Engineering</span>
+  <span class="badge">Classification Models</span>
+  <span class="badge">Model Evaluation</span>
+  <span class="badge">Jupyter Notebooks</span>
+</div>
 
 ### Project links
 
-{% include badge.html label="GitHub Repo" url="https://github.com/YOUR_GITHUB_USERNAME/YOUR_TERM_DEPOSIT_REPO" icon="fab fa-github" %}
+<div class="badge-row">
+  <span class="badge badge--link">
+    <a href="https://github.com/YOUR_GITHUB_USERNAME/YOUR_TERM_DEPOSIT_REPO" target="_blank" rel="noopener noreferrer">
+      GitHub Repo
+    </a>
+  </span>
+</div>
 
 </div>
