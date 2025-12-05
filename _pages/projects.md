@@ -25,9 +25,7 @@ classes: wide projects-page
 </div>
 
 <p>
-  A custom machine learning system built from the Discogs XML data dump, designed to
-  recommend rare and obscure vinyl records based on personal taste. Includes ETL pipelines,
-  feature engineering, similarity modelling, and rarity scoring logic.
+A personlised recommendation system built using the Discogs API to analyse my collection and wantlist, then branch out through connected labels and artists. The model focuses on pure Electronic releases, transforms metadata with TF-IDF and cosine similarity, and layers in a rarity score that boosts high-want/low-have records while down-weighting over-exposed ones. The result is a personalised engine for surfacing genuinely obscure vinyl I’m likely to enjoy.
 </p>
 
 <div style="
@@ -47,11 +45,12 @@ classes: wide projects-page
 </div>
 
 <ul style="margin-top: 8px; margin-bottom:14px; padding-left: 1.2rem;">
-  <li>Python (Pandas, NumPy, Scikit-Learn)</li>
-  <li>XML ingestion & ETL pipeline engineering</li>
-  <li>Cosine similarity recommender modelling</li>
-  <li>SQLite database design</li>
-  <li>Custom scoring & feature weighting</li>
+  <li>Python (Pandas, NumPy, SciPy, Scikit-Learn)</li>
+  <li>JSON API integration & rate-limited ETL pipeline design (Discogs API)</li>
+  <li>Content-based recommender modelling (TF-IDF, cosine similarity)</li>
+  <li>Graph-style feature engineering from label/artist relationships</li>
+  <li>SQLite data modelling and optimisation</li>
+  <li>Custom scoring logic for rarity weighting and feature scaling</li>
 </ul>
 
 <a href="https://github.com/YOUR_GITHUB_USERNAME/YOUR_DISCOGS_REPO" target="_blank" rel="noopener noreferrer">
