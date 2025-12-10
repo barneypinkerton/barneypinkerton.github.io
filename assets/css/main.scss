@@ -22,18 +22,21 @@
 
 /* Our custom card that appears just below the hero,
    visually overlapping the bottom of the image */
+/* Hero bio card */
 .home-hero-overlay {
-  max-width: 960px;
-  margin: -140px auto 3rem auto;  /* pull up over image */
-  padding: 2rem 2.5rem;
+  width: 90%;                  /* makes it larger */
+  max-width: 1100px;           /* bigger than before */
+  margin: -220px auto 3rem auto; /* pull it higher over the photo */
+  padding: 2.5rem 3rem;        /* more breathing room */
   display: flex;
-  gap: 2.5rem;
+  gap: 3rem;                   /* more space between left & right columns */
   align-items: center;
-  background: rgba(148, 163, 184, 0.9); /* your grey card colour */
-  border-radius: 18px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  background: rgba(15, 23, 42, 0.45); /* slightly deeper translucent look */
+  border-radius: 22px;         /* softer corners */
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
   position: relative;
-  z-index: 5; /* above hero + white background */
+  z-index: 5;
+  backdrop-filter: blur(8px);  /* smoother glass effect */
 }
 
 /* Left side: headshot + name/tagline */
