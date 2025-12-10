@@ -70,3 +70,52 @@
   background: #f3f4f6;
   border: 1px solid rgba(0, 0, 0, 0.06);
 }
+
+/* =====================================
+   Home hero: full-screen hometown photo
+   with fade-in + subtle zoom
+   ===================================== */
+
+/* Remove padding/margins for this special layout */
+.home-hero.no-padding .page__content,
+.home-hero.no-padding .page__hero {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Make the hero fill the viewport */
+.home-hero .page__hero--overlay {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Animate the background image (Minimal Mistakes uses ::before) */
+.home-hero .page__hero--overlay::before {
+  animation: heroZoomFade 18s ease-out forwards;
+  transform-origin: center center;
+}
+
+/* Optional: keep any hero text (if you add some later) above the overlay */
+.home-hero .page__hero-inner {
+  position: relative;
+  z-index: 2;
+}
+
+/* Fade-in + slow zoom animation */
+@keyframes heroZoomFade {
+  0% {
+    opacity: 0;
+    transform: scale(1.06);
+  }
+  20% {
+    opacity: 1;
+    transform: scale(1.04);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+}
+
