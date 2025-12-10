@@ -3,9 +3,9 @@ main:
     url: /projects/  
   - title: "Writing"
     url: /writing/
-  - title: "Experience"
-    url: /experience/
-  - title: "Education"
-    url: /education/
+##  - title: "Experience"
+##    url: /experience/
+##  - title: "Education"
+##    url: /education/
 
     
