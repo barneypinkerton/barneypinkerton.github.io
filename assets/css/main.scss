@@ -5,105 +5,44 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
-/* =============================
-   Projects page overall width
-   ============================= */
-
-/* Let the Projects layout use a wider page container than the default */
-.projects-page .page {
-  max-width: 1400px;  /* bump this up or down to taste (default is ~1200px) */
-}
-
-/* =============================
-   Projects page layout tweaks
-   ============================= */
-
-/* Reduce gap under the intro line on the Projects page */
-.projects-page .page__content .page__lead {
-  margin-bottom: 1.25rem;
-}
-
-/* Space between cards */
-.projects-page .list__item {
-  margin-bottom: 2rem;
-}
-
-/* Card styling */
-.projects-page .list__item .archive__item {
-  background: #ffffff;
-  border-radius: 12px;
-  border-left: 4px solid #0ea5e9; /* accent strip on the left */
-  padding: 1.5rem 1.75rem;
-  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05);
-}
-
-/* On larger screens, make the card wider by extending it to the right only */
-@media (min-width: 1024px) {
-  .projects-page .list__item .archive__item {
-    margin-right: -100rem;  /* pull the right edge out toward the page edge */
-  }
-}
-
-/* =============================
-   Project body & skill badges
-   ============================= */
-
-/* Space between badges and the main project body text */
-.projects-page .project-body {
-  margin-top: 0.75rem;
-}
-
-/* Wrapper for the badges row under each project title */
-.projects-page .project-badges {
-  margin-top: 0.5rem;
-}
-
-/* Individual pill-style badges */
-.projects-page .project-badge {
-  display: inline-block;
-  margin-right: 0.4rem;
-  margin-bottom: 0.3rem;
-  padding: 0.15rem 0.6rem;
-  border-radius: 999px;
-  font-size: 0.75rem;
-  line-height: 1.3;
-  background: #f3f4f6;
-  border: 1px solid rgba(0, 0, 0, 0.06);
-}
-
 /* =====================================
    Home hero: full-screen hometown photo
    with fade-in + subtle zoom
    ===================================== */
 
-/* Remove padding/margins for this special layout */
-.home-hero.no-padding .page__content,
-.home-hero.no-padding .page__hero {
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-/* Make the hero fill the viewport */
+/* Full-screen hero container */
 .home-hero .page__hero--overlay {
-  min-height: 100vh;
+  min-height: 100vh !important;
+  height: 100vh !important;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 !important;
+  margin: 0 !important;
+  position: relative;
+}
+
+/* Remove extra content under the hero on the home page */
+.home-hero .page__content {
+  display: none;
 }
 
 /* Animate the background image (Minimal Mistakes uses ::before) */
 .home-hero .page__hero--overlay::before {
+  height: 100vh !important;
+  width: 100%;
+  background-size: cover !important;
+  background-position: center center !important;
   animation: heroZoomFade 18s ease-out forwards;
   transform-origin: center center;
 }
 
-/* Optional: keep any hero text (if you add some later) above the overlay */
+/* Hide default hero text (big "Barney Pinkerton" title) */
 .home-hero .page__hero-inner {
-  position: relative;
-  z-index: 2;
+  display: none !important;
 }
 
-/* Fade-in + slow zoom animation */
+/* Fade-in + slow zoom animation on the background */
 @keyframes heroZoomFade {
   0% {
     opacity: 0;
@@ -117,33 +56,6 @@
     opacity: 1;
     transform: scale(1.02);
   }
-}
-
-/* =====================================
-   Full-screen homepage hero fix
-   ===================================== */
-
-.home-hero .page__hero--overlay {
-  min-height: 100vh !important; /* force full-screen height */
-  height: 100vh !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-/* Remove extra margins/padding under the image */
-.home-hero .page__content {
-  display: none;
-}
-
-/* Fix for overlay pseudo-element sizing */
-.home-hero .page__hero--overlay::before {
-  height: 100vh !important;
-  width: 100%;
-  background-size: cover !important;
-  background-position: center center !important;
 }
 
 /* ==========================================
@@ -169,26 +81,14 @@
   animation: fadeIn 1.3s ease forwards, slightZoom 30s ease-out forwards;
 }
 
-/* Fade-in animation */
+/* Fade-in animation for headshot */
 @keyframes fadeIn {
   0% { opacity: 0; transform: scale(0.95); }
   100% { opacity: 1; transform: scale(1); }
 }
 
-/* Slow ambient zoom effect */
+/* Slow ambient zoom effect on headshot */
 @keyframes slightZoom {
   0% { transform: scale(1); }
   100% { transform: scale(1.02); }
-}
-
-/* Make sure hero takes full height */
-.home-hero .page__hero--overlay {
-  min-height: 100vh !important;
-  height: 100vh !important;
-  position: relative;
-}
-
-/* Hide default hero text */
-.home-hero .page__hero-inner {
-  display: none !important;
 }
