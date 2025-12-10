@@ -146,4 +146,49 @@
   background-position: center center !important;
 }
 
+/* ==========================================
+   Homepage hero headshot styling
+   ========================================== */
 
+.hero-headshot-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5; /* above overlay */
+  text-align: center;
+}
+
+.hero-headshot {
+  width: 180px;   /* adjust size here */
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  animation: fadeIn 1.3s ease forwards, slightZoom 30s ease-out forwards;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* Slow ambient zoom effect */
+@keyframes slightZoom {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.02); }
+}
+
+/* Make sure hero takes full height */
+.home-hero .page__hero--overlay {
+  min-height: 100vh !important;
+  height: 100vh !important;
+  position: relative;
+}
+
+/* Hide default hero text */
+.home-hero .page__hero-inner {
+  display: none !important;
+}
