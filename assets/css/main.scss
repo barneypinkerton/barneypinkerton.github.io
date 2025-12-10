@@ -119,3 +119,31 @@
   }
 }
 
+/* =====================================
+   Full-screen homepage hero fix
+   ===================================== */
+
+.home-hero .page__hero--overlay {
+  min-height: 100vh !important; /* force full-screen height */
+  height: 100vh !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Remove extra margins/padding under the image */
+.home-hero .page__content {
+  display: none;
+}
+
+/* Fix for overlay pseudo-element sizing */
+.home-hero .page__hero--overlay::before {
+  height: 100vh !important;
+  width: 100%;
+  background-size: cover !important;
+  background-position: center center !important;
+}
+
+
