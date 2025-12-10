@@ -4,3 +4,87 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
+
+/* =====================================
+   Home splash hero custom layout
+   ===================================== */
+
+/* Make the splash hero fill the viewport and allow overlay positioning */
+.layout--splash .page__hero--overlay {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* Hide the default big title/lead on splash (e.g. “Barney Pinkerton”) */
+.layout--splash .page__title,
+.layout--splash .page__lead {
+  display: none;
+}
+
+/* Our custom overlay panel that sits on top of the hero image */
+.home-hero-overlay {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 960px;
+  width: 100%;
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  padding: 2rem 2.5rem;
+  background: rgba(15, 23, 42, 0.35); /* translucent dark panel */
+  border-radius: 18px;
+  backdrop-filter: blur(6px);
+}
+
+/* Left side: headshot + name/tagline */
+.home-hero-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.home-headshot {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  margin-bottom: 0.75rem;
+}
+
+.home-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+
+.home-tagline {
+  font-size: 0.95rem;
+  color: #e5e7eb;
+}
+
+/* Right side: about text */
+.home-hero-right {
+  color: #f9fafb;
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+/* Stack layout on mobile */
+@media (max-width: 768px) {
+  .home-hero-overlay {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem 1.75rem;
+  }
+
+  .home-hero-right {
+    font-size: 0.95rem;
+  }
+}
