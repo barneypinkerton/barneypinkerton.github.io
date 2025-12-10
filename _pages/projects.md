@@ -5,7 +5,7 @@ layout: single
 classes: wide projects-page
 ---
 
-*A selection of technical and creative projects involving machine learning, data pipelines, dashboard analytics, and predictive modelling. Each card includes a short description, a skills snapshot, and a link to explore the full work.*
+*A selection of technical and creative projects involving machine learning, data pipelines, dashboard analytics, and predictive modelling. Each card includes a short description, a skills snapshot and a link to explore the full work.*
 
 ---
 
@@ -130,8 +130,8 @@ A personlised recommendation system built using the Discogs API to analyse my co
 
 <p>
   A supervised machine learning classifier predicting customer conversion for term
-  deposit campaigns. Includes preprocessing, feature engineering, model training,
-  evaluation (ROC-AUC, CV) and interpretation.
+  deposit campaigns. Includes preprocessing, feature engineering, model training and
+  evaluation (ROC-AUC, CV).
 </p>
 
 <div style="
@@ -158,7 +158,7 @@ A personlised recommendation system built using the Discogs API to analyse my co
   <li>Jupyter notebook workflow</li>
 </ul>
 
-<a href="https://github.com/YOUR_GITHUB_USERNAME/YOUR_TERM_DEPOSIT_REPO" target="_blank" rel="noopener noreferrer">
+<a href="https://github.com/barneypinkerton/termdeposit-ml/blob/main/td_ml_v2.ipynb" target="_blank" rel="noopener noreferrer">
   View project on GitHub &rarr;
 </a>
 
