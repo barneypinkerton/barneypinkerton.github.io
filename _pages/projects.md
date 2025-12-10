@@ -125,7 +125,7 @@ A personlised recommendation system built using the Discogs API to analyse my co
 
 <h2 style="margin-top:0;">Term Deposit Subscription Prediction Model</h2>
 <div style="color:#666; font-size:0.95em; margin-bottom:10px;">
-  Predictive Modelling · 2025
+  Predictive Modelling · 2024
 </div>
 
 <p>
