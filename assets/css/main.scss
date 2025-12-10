@@ -9,35 +9,31 @@
    Home splash hero custom layout
    ===================================== */
 
-/* Make the splash hero fill the viewport and allow overlay positioning */
+/* Make the splash hero taller */
 .layout--splash .page__hero--overlay {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  position: relative;
+  min-height: 80vh;
 }
 
-/* Hide the default big title/lead on splash (e.g. “Barney Pinkerton”) */
-.layout--splash .page__title,
-.layout--splash .page__lead {
+/* Hide the big hero title text ("Barney Pinkerton") */
+.layout--splash .page__hero--overlay .page__title,
+.layout--splash .page__hero--overlay h1 {
   display: none;
 }
 
-/* Our custom overlay panel that sits on top of the hero image */
+/* Our custom card that appears just below the hero,
+   visually overlapping the bottom of the image */
 .home-hero-overlay {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   max-width: 960px;
-  width: 100%;
+  margin: -140px auto 3rem auto;  /* pull up over image */
+  padding: 2rem 2.5rem;
   display: flex;
   gap: 2.5rem;
   align-items: center;
-  padding: 2rem 2.5rem;
-  background: rgba(15, 23, 42, 0.35); /* translucent dark panel */
+  background: rgba(148, 163, 184, 0.9); /* your grey card colour */
   border-radius: 18px;
-  backdrop-filter: blur(6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 5; /* above hero + white background */
 }
 
 /* Left side: headshot + name/tagline */
@@ -60,18 +56,17 @@
 .home-name {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #ffffff;
-  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+  color: #111827;
 }
 
 .home-tagline {
   font-size: 0.95rem;
-  color: #e5e7eb;
+  color: #111827;
 }
 
 /* Right side: about text */
 .home-hero-right {
-  color: #f9fafb;
+  color: #111827;
   font-size: 0.98rem;
   line-height: 1.6;
 }
@@ -82,6 +77,7 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 1.5rem 1.75rem;
+    margin: -90px 1rem 2rem 1rem;
   }
 
   .home-hero-right {
