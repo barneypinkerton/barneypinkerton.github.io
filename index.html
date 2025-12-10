@@ -1,14 +1,90 @@
 ---
 layout: splash
 permalink: /
+title: ""          # hide big heading
 classes: home-hero
 header:
-  overlay_image: /assets/images/hometown.jpg
-  overlay_filter: 0.0
+  overlay_image: /assets/images/hometown.jpg   # your beach photo
+  overlay_filter: 0.15                         # slight darkening so text is readable
 ---
 
-<div class="hero-headshot-wrapper">
-  <img src="/assets/images/headshot.jpg"
-       class="hero-headshot"
-       alt="Barney Pinkerton">
-</div>
+<style>
+/* Make the hero fill most of the viewport and use our custom content */
+.home-hero .page__hero--overlay {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Hide the default big "Barney Pinkerton" hero text */
+.home-hero .page__hero-inner {
+  display: none;
+}
+
+/* Our custom overlay content */
+.home-hero-content {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 2.5rem;
+  background: rgba(15, 23, 42, 0.35); /* translucent dark panel */
+  border-radius: 18px;
+  backdrop-filter: blur(6px);
+}
+
+/* Left side: headshot + name/tagline */
+.home-hero-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.home-headshot {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  margin-bottom: 0.75rem;
+}
+
+.home-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+
+.home-tagline {
+  font-size: 0.95rem;
+  color: #e5e7eb;
+}
+
+/* Right side: about text */
+.home-hero-right {
+  color: #f9fafb;
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+/* Stack on mobile */
+@media (max-width: 768px) {
+  .home-hero-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .home-hero-right {
+    font-size: 0.95rem;
+  }
+}
+</style>
+
+<div class="home-hero-content">
+  <div class="home-hero-left">
+    <img src="/assets/images/headshot.jpg"
+         alt="Barney Pinkerton"
+         class="home-headshot" />
