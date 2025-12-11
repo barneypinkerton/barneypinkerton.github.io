@@ -57,7 +57,9 @@ plugins:
 author:
   name   : "Barney Pinkerton"
   avatar : "/assets/images/bio-pic.png"  # you can replace this image later
-  bio    : "Music Business & Music Tech **@NYU** Former fin-crime analytics **@CBA**"
+  bio    : "Music Business & Music Tech **@NYU** 
+
+footer:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
@@ -68,18 +70,6 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/barneypinkerton"
-
-footer:
-  links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
 
 defaults:
   # _posts
