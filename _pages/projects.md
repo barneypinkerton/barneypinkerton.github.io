@@ -42,7 +42,7 @@ A personlised recommendation system built using the Discogs API to analyse my co
   text-transform: uppercase;
   color: #fff;
 ">
-  Skills used
+  Skills
 </div>
 
 <ul style="margin-top: 8px; margin-bottom:14px; padding-left: 1.2rem;">
@@ -95,7 +95,7 @@ A personlised recommendation system built using the Discogs API to analyse my co
   text-transform: uppercase;
   color: #fff;
 ">
-  Skills used
+  Skills
 </div>
 
 <ul style="margin-top: 8px; margin-bottom:14px; padding-left: 1.2rem;">
@@ -148,7 +148,7 @@ A personlised recommendation system built using the Discogs API to analyse my co
   text-transform: uppercase;
   color: #fff;
 ">
-  Skills used
+  Skills
 </div>
 
 <ul style="margin-top: 8px; margin-bottom:14px; padding-left: 1.2rem;">
