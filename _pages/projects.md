@@ -6,7 +6,7 @@ classes: wide projects-page
 author_profile: true
 ---
 
-*A selection of technical and creative projects involving machine learning, data pipelines, dashboard analytics, and predictive modelling. Each card includes a short description, a skills snapshot and a link to explore the full work.*
+*A selection of technical projects involving machine learning, dashboard analytics, and predictive modelling. Each card includes a short description, a skills snapshot and a link to explore the full work.*
 
 ---
 
@@ -26,7 +26,7 @@ author_profile: true
 </div>
 
 <p>
-A personlised recommendation system built using the Discogs API to analyse my collection and wantlist, then branch out through connected labels and artists. The model includes a desirability and rarity score that boosts high-want/low-have records while down-weighting over-exposed ones. The result is a personalised engine for surfacing genuinely obscure (and hopefully cheap!) dance records I’m likely to enjoy.
+A personlised recommendation system built using the Discogs API to analyse my collection and wantlist, then branch out through connected labels and artists. The model includes a desirability and rarity score that boosts high-want/low-have records while down-weighting over-owned ones. The result is a personalised engine for surfacing genuinely obscure (and hopefully cheap!) dance records I’m likely to enjoy.
 </p>
 
 <div style="
@@ -79,7 +79,7 @@ A personlised recommendation system built using the Discogs API to analyse my co
 <p>
   A Tableau dashboard analysing listening patterns across songs, artists,
   albums and genres. Includes dynamic parameters, ranking logic, calculated fields
-  and an integrated UX-focused layout for storytelling.
+  and an integrated UX-focused layout for storytelling, happy clicking!
 </p>
 
 <div style="
@@ -99,8 +99,8 @@ A personlised recommendation system built using the Discogs API to analyse my co
 </div>
 
 <ul style="margin-top: 8px; margin-bottom:14px; padding-left: 1.2rem;">
-  <li>Tableau (parameters, LODs, dynamic sorting)</li>
-  <li>Python and Script Editor based data preparation</li>
+  <li>Tableau (calculated fields, parameters, LODs, dynamic sorting and grouping)</li>
+  <li>Python and Script Editor based data ETL and preparation</li>
   <li>Time-series interpretation</li>
   <li>Dashboard UX design</li>
   <li>Interactive data storytelling</li>
