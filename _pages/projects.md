@@ -3,6 +3,7 @@ title: "Projects"
 permalink: /projects/
 layout: single
 classes: wide projects-page
+author_profile: true
 ---
 
 *A selection of technical and creative projects involving machine learning, data pipelines, dashboard analytics, and predictive modelling. Each card includes a short description, a skills snapshot and a link to explore the full work.*
