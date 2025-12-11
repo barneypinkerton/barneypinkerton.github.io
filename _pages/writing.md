@@ -27,7 +27,7 @@ author_profile: true
 <p style="margin-bottom:10px;">
   <em>“This is where you put a short excerpt — one or two sentences that capture the voice
   and idea of the piece. It should be enough to make someone want to click through and
-  keep reading…”<em>
+  keep reading…”</em>
 </p>
 
 <a href="/assets/writing/essay-1.pdf" target="_blank" rel="noopener noreferrer">
@@ -56,7 +56,7 @@ author_profile: true
   <em>“These venues not only provide spaces for artists to preform, but are immersive environments that merge
    architecture, sound, food and art to provide a uniquely holistic experience to the point
    where audiences attend not only for the performances but to experience the aesthetic
-   of the venue as well.”<em>
+   of the venue as well.”</em>
 </p>
 
 <a href="/assets/writing/NYU Music Business Admission Essay.pdf" target="_blank" rel="noopener noreferrer">
@@ -83,7 +83,7 @@ author_profile: true
 
 <p style="margin-bottom:10px;">
   <em>“Use this space to briefly set up the argument or question you’re exploring — what the
-  paper is about, why it matters, and what angle you’re taking…”<em>
+  paper is about, why it matters, and what angle you’re taking…”</em>
 </p>
 
 <a href="/assets/writing/paper-3.pdf" target="_blank" rel="noopener noreferrer">
