@@ -74,7 +74,7 @@ author_profile: true
   border-radius: 6px;
 ">
 
-<h2 style="margin-top:0;">NYU Global Citizenship Scholarship Essay</h2>
+<h2 style="margin-top:0;">NYU Global Citizen Scholarship Essay</h2>
 <div style="color:#666; font-size:0.95em; margin-bottom:8px;">
   Creative Writing · 2024
 </div>
