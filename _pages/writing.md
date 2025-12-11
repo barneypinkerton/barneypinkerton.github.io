@@ -19,9 +19,9 @@ author_profile: true
   border-radius: 6px;
 ">
 
-<h2 style="margin-top:0;">NYU Coursework Essay</h2>
+<h2 style="margin-top:0;">NYU Music Business Coursework Essay</h2>
 <div style="color:#666; font-size:0.95em; margin-bottom:8px;">
-  Essay · 2024
+  Essay · 2025
 </div>
 
 <p style="margin-bottom:10px;">
@@ -47,7 +47,7 @@ author_profile: true
 
 <h2 style="margin-top:0;">NYU Music Business Admission Essay</h2>
 <div style="color:#666; font-size:0.95em; margin-bottom:8px;">
-  Creative writing · 2023
+  Essay · 2025
 </div>
 
 <p style="margin-bottom:10px;">
@@ -76,7 +76,7 @@ author_profile: true
 
 <h2 style="margin-top:0;">NYU Global Citizenship Scholarship Essay</h2>
 <div style="color:#666; font-size:0.95em; margin-bottom:8px;">
-  Research / course paper · 2022
+  Creative Writing · 2024
 </div>
 
 <p style="margin-bottom:10px;">
