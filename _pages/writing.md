@@ -54,7 +54,7 @@ author_profile: true
   <em>“These venues not only provide spaces for artists to preform, but are immersive environments that merge
    architecture, sound, food and art to provide a uniquely holistic experience to the point
    where audiences attend not only for the performances but to experience the aesthetic
-   of the venue as well.”</em>
+   of the venues as well.”</em>
 </p>
 
 <a href="/assets/writing/NYU Music Business Admission Essay.pdf" target="_blank" rel="noopener noreferrer">
