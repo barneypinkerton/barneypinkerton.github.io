@@ -19,18 +19,16 @@ author_profile: true
   border-radius: 6px;
 ">
 
-<h2 style="margin-top:0;">Title of Essay #1</h2>
+<h2 style="margin-top:0;">NYU Coursework Essay</h2>
 <div style="color:#666; font-size:0.95em; margin-bottom:8px;">
   Essay · 2024
 </div>
 
 <p style="margin-bottom:10px;">
-  <em>“This is where you put a short excerpt — one or two sentences that capture the voice
-  and idea of the piece. It should be enough to make someone want to click through and
-  keep reading…”</em>
+  <em>“The labels argue that Suno extracted the likeness of copyrighted works for its own gain without fairly compensating, drawing parallels to earlier challenges over uncredited session musicians, the faceless labour of 1920s sidemen now mirroring today’s anonymous datasets that feed generative systems.”</em>
 </p>
 
-<a href="/assets/writing/essay-1.pdf" target="_blank" rel="noopener noreferrer">
+<a href="/assets/writing/NYU Coursework Essay.pdf" target="_blank" rel="noopener noreferrer">
   Read full piece &rarr;
 </a>
 
@@ -47,7 +45,7 @@ author_profile: true
   border-radius: 6px;
 ">
 
-<h2 style="margin-top:0;">Title of Creative Piece #2</h2>
+<h2 style="margin-top:0;">NYU Music Business Admission Essay</h2>
 <div style="color:#666; font-size:0.95em; margin-bottom:8px;">
   Creative writing · 2023
 </div>
@@ -76,17 +74,17 @@ author_profile: true
   border-radius: 6px;
 ">
 
-<h2 style="margin-top:0;">Title of Paper #3</h2>
+<h2 style="margin-top:0;">NYU Global Citizenship Scholarship Essay</h2>
 <div style="color:#666; font-size:0.95em; margin-bottom:8px;">
   Research / course paper · 2022
 </div>
 
 <p style="margin-bottom:10px;">
-  <em>“Use this space to briefly set up the argument or question you’re exploring — what the
-  paper is about, why it matters, and what angle you’re taking…”</em>
+  <em>“My mind raced: What was this? Was he protesting? Was he a flat-out racist? Why did the locals beam with amusement when they saw him? 
+    In summary: What the f**k?" </em>
 </p>
 
-<a href="/assets/writing/paper-3.pdf" target="_blank" rel="noopener noreferrer">
+<a href="/assets/writing/NYU Global Citizenship Scholarship Essay.pdf" target="_blank" rel="noopener noreferrer">
   Read full piece &rarr;
 </a>
 
