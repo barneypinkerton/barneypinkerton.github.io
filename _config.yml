@@ -82,3 +82,6 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+
+# Tab image 
+favicon: /assets/images/bio-pic.png
