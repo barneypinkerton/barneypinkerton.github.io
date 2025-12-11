@@ -6,13 +6,13 @@ classes: wide
 author_profile: true
 ---
 
-  *A selection of essays, creative pieces, and reflections on music, data, and culture. Each card includes a short excerpt — click through to read the full piece.*
+*A selection of essays, creative pieces, and reflections on music, data, and culture. Each card includes a short excerpt — click through to read the full piece.*
 
 ---
 
 <!-- CARD 1: Example essay -->
 <div style="
-  border-left: 4px solid #3366FF;
+  border-left: 4px solid #475569;
   padding: 20px;
   margin-bottom: 32px;
   background: #fafafa;
@@ -40,7 +40,7 @@ author_profile: true
 
 <!-- CARD 2: Creative writing -->
 <div style="
-  border-left: 4px solid #FF7A59;
+  border-left: 4px solid #475569;
   padding: 20px;
   margin-bottom: 32px;
   background: #fafafa;
@@ -69,7 +69,7 @@ author_profile: true
 
 <!-- CARD 3: Academic / course paper -->
 <div style="
-  border-left: 4px solid #22A779;
+  border-left: 4px solid #475569;
   padding: 20px;
   margin-bottom: 32px;
   background: #fafafa;
@@ -91,4 +91,3 @@ author_profile: true
 </a>
 
 </div>
-
