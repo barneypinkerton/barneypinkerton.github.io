@@ -12,7 +12,7 @@ author_profile: true
 
 <!-- CARD 1: Discogs ML Algorithm -->
 <div class="project-card" style="
-  border-left: 6px solid #1E293B;
+  border-left: 6px solid #475569;
   padding: 24px;
   margin-bottom: 36px;
   background: #fafafa;
@@ -34,7 +34,7 @@ A personlised recommendation system built using the Discogs API to analyse my co
   margin-bottom: 6px;
   padding: 6px 14px;
   border-radius: 999px;
-  background: #1E293B;
+  background: #475569;
   display: inline-block;
   font-size: 0.8rem;
   font-weight: 600;
@@ -63,7 +63,7 @@ A personlised recommendation system built using the Discogs API to analyse my co
 
 <!-- CARD 2: Apple Music Dashboard -->
 <div class="project-card" style="
-  border-left: 6px solid #1E293B;
+  border-left: 6px solid #475569;
   padding: 24px;
   margin-bottom: 36px;
   background: #fafafa;
@@ -87,7 +87,7 @@ A personlised recommendation system built using the Discogs API to analyse my co
   margin-bottom: 6px;
   padding: 6px 14px;
   border-radius: 999px;
-  background: #1E293B;
+  background: #475569;
   display: inline-block;
   font-size: 0.8rem;
   font-weight: 600;
@@ -116,7 +116,7 @@ A personlised recommendation system built using the Discogs API to analyse my co
 
 <!-- CARD 3: Term Deposit ML Predictor -->
 <div class="project-card" style="
-  border-left: 6px solid #1E293B;
+  border-left: 6px solid #475569;
   padding: 24px;
   margin-bottom: 36px;
   background: #fafafa;
@@ -140,7 +140,7 @@ A personlised recommendation system built using the Discogs API to analyse my co
   margin-bottom: 6px;
   padding: 6px 14px;
   border-radius: 999px;
-  background: #1E293B;
+  background: #475569;
   display: inline-block;
   font-size: 0.8rem;
   font-weight: 600;
