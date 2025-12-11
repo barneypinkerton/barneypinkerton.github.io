@@ -100,7 +100,7 @@ A personlised recommendation system built using the Discogs API to analyse my co
 
 <ul style="margin-top: 8px; margin-bottom:14px; padding-left: 1.2rem;">
   <li>Tableau (calculated fields, parameters, LODs, dynamic sorting and grouping)</li>
-  <li>Python and Script Editor based data ETL and preparation</li>
+  <li>Script Editor and Python based ETL</li>
   <li>Time-series interpretation</li>
   <li>Dashboard UX design</li>
   <li>Interactive data storytelling</li>
