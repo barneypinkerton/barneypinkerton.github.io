@@ -6,7 +6,7 @@ classes: wide projects-page
 author_profile: true
 ---
 
-*A selection of technical projects involving machine learning, dashboard analytics, and predictive modelling. Each card includes a short description, a skills snapshot and a link to explore the full work.*
+*A selection of technical projects involving machine learning, dashboard analytics and predictive modelling. Each card includes a short description, a skills snapshot and a link to explore the full work.*
 
 ---
 
