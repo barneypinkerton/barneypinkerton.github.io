@@ -6,7 +6,7 @@ classes: wide
 author_profile: true
 ---
 
-*A selection of essays, creative pieces and reflections on music, data, and culture. Each card includes a short excerpt — click through to read the full piece.*
+*A selection of essays, creative pieces and reflections on music, data and culture. Each card includes a short excerpt — click through to read the full piece.*
 
 ---
 
