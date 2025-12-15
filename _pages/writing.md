@@ -76,15 +76,15 @@ author_profile: true
 
 <h2 style="margin-top:0;">NYU Global Citizen Scholarship Essay</h2>
 <div style="color:#666; font-size:0.95em; margin-bottom:8px;">
-  Creative Writing · 2024
+  Reflection · 2024
 </div>
 
 <p style="margin-bottom:10px;">
-  <em>“My mind raced: What was this? Was he protesting? Was he a flat-out racist? Why did the locals beam with amusement when they saw him? 
+  <em>“My mind raced: What was this? Was he protesting? Was he a bigot? Why did the locals beam with amusement when they saw him? 
     In summary: What the f**k?" </em>
 </p>
 
-<a href="/assets/writing/NYU Global Citizenship Scholarship Essay.pdf" target="_blank" rel="noopener noreferrer">
+<a href="/assets/writing/NYU Global Citizen Scholarship Essay.pdf" target="_blank" rel="noopener noreferrer">
   Read full piece &rarr;
 </a>
 
