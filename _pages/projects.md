@@ -101,9 +101,9 @@ A personlised recommendation system built using the Discogs API to analyse my co
 <ul style="margin-top: 8px; margin-bottom:14px; padding-left: 1.2rem;">
   <li>Tableau (calculated fields, parameters, LODs, dynamic sorting and grouping)</li>
   <li>Script Editor and Python based ETL</li>
-  <li>Time-series interpretation</li>
+  <li>Time-based filtering</li>
   <li>Dashboard UX design</li>
-  <li>Interactive data storytelling</li>
+  <li>Interactive storytelling</li>
 </ul>
 
 <a href="https://public.tableau.com/app/profile/barnaby.pinkerton/viz/AppleMusicDashboard_17647709521790/AppleMusicDashboard?publish=yes" target="_blank" rel="noopener noreferrer">
