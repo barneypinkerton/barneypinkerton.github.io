@@ -80,7 +80,7 @@ author_profile: true
 </div>
 
 <p style="margin-bottom:10px;">
-  <em>“Within minutes, the mundane formaliGes that dominate day to day life begin to fade to
+  <em>“Within minutes, the mundane formalites that dominate day to day life begin to fade to
        black — replaced by rhythm, colour, and shared energy." </em>
 </p>
 
