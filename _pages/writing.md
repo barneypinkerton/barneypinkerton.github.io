@@ -74,17 +74,17 @@ author_profile: true
   border-radius: 6px;
 ">
 
-<h2 style="margin-top:0;">NYU Global Citizen Scholarship Essay</h2>
+<h2 style="margin-top:0;">NYU Music Technology Experience</h2>
 <div style="color:#666; font-size:0.95em; margin-bottom:8px;">
-  Reflection · 2024
+  Reflection · 2025
 </div>
 
 <p style="margin-bottom:10px;">
-  <em>“My mind raced: What was this? Was he protesting? Was he a bigot? Why did the locals beam with amusement when they saw him? 
-    In summary: What the f**k?" </em>
+  <em>“Within minutes, the mundane formaliGes that dominate day to day life begin to fade to
+       black — replaced by rhythm, colour, and shared energy." </em>
 </p>
 
-<a href="/assets/writing/NYU Global Citizen Scholarship Essay.pdf" target="_blank" rel="noopener noreferrer">
+<a href="/assets/writing/NYU Music Technology Experience.pdf" target="_blank" rel="noopener noreferrer">
   Read full piece &rarr;
 </a>
 
