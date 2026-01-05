@@ -9,6 +9,32 @@ author_profile: true
 *A selection of essays, creative pieces and reflections on music, data and culture. Each card includes a short excerpt — click through to read the full piece.*
 
 ---
+<!-- CARD 3: Academic / course paper -->
+<div style="
+  border-left: 4px solid #475569;
+  padding: 20px;
+  margin-bottom: 32px;
+  background: #fafafa;
+  border-radius: 6px;
+">
+
+<h2 style="margin-top:0;">NYU Music Technology Experience</h2>
+<div style="color:#666; font-size:0.95em; margin-bottom:8px;">
+  Reflection · 2025
+</div>
+
+<p style="margin-bottom:10px;">
+  <em>“Within minutes, the mundane formalites that dominate day to day life begin to fade to
+       black — replaced by rhythm, colour, and shared energy." </em>
+</p>
+
+<a href="/assets/writing/NYU Music Technology Experience.pdf" target="_blank" rel="noopener noreferrer">
+  Read full piece &rarr;
+</a>
+
+</div>
+
+---
 
 <!-- CARD 1: Example essay -->
 <div style="
@@ -64,28 +90,3 @@ author_profile: true
 </div>
 
 ---
-
-<!-- CARD 3: Academic / course paper -->
-<div style="
-  border-left: 4px solid #475569;
-  padding: 20px;
-  margin-bottom: 32px;
-  background: #fafafa;
-  border-radius: 6px;
-">
-
-<h2 style="margin-top:0;">NYU Music Technology Experience</h2>
-<div style="color:#666; font-size:0.95em; margin-bottom:8px;">
-  Reflection · 2025
-</div>
-
-<p style="margin-bottom:10px;">
-  <em>“Within minutes, the mundane formalites that dominate day to day life begin to fade to
-       black — replaced by rhythm, colour, and shared energy." </em>
-</p>
-
-<a href="/assets/writing/NYU Music Technology Experience.pdf" target="_blank" rel="noopener noreferrer">
-  Read full piece &rarr;
-</a>
-
-</div>
