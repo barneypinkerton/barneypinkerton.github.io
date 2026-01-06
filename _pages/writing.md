@@ -18,9 +18,9 @@ author_profile: true
   border-radius: 6px;
 ">
 
-<h2 style="margin-top:0;">NYU Music Technology Experience</h2>
+<h2 style="margin-top:0;">Music Technology Experience: Mister Sundays @Nowadays</h2>
 <div style="color:#666; font-size:0.95em; margin-bottom:8px;">
-  Reflection · 2025
+  NYU · Reflection · 2025
 </div>
 
 <p style="margin-bottom:10px;">
@@ -45,9 +45,9 @@ author_profile: true
   border-radius: 6px;
 ">
 
-<h2 style="margin-top:0;">NYU Music Business Coursework Essay</h2>
+<h2 style="margin-top:0;">What can historic artist–label copyright disputes teach us about AI-generated music and ownership?</h2>
 <div style="color:#666; font-size:0.95em; margin-bottom:8px;">
-  Essay · 2025
+  NYU · Essay · 2025
 </div>
 
 <p style="margin-bottom:10px;">
@@ -71,9 +71,9 @@ author_profile: true
   border-radius: 6px;
 ">
 
-<h2 style="margin-top:0;">NYU Music Business Admission Essay</h2>
+<h2 style="margin-top:0;">Which emerging opportunities and risks in Australia’s live music ecosystem present the most meaningful areas for research?</h2>
 <div style="color:#666; font-size:0.95em; margin-bottom:8px;">
-  Essay · 2025
+  NYU · Essay · 2025
 </div>
 
 <p style="margin-bottom:10px;">
