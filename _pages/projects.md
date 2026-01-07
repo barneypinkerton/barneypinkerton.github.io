@@ -6,6 +6,8 @@ classes: wide projects-page
 author_profile: false
 ---
 
+<div style="max-width: 920px; margin: 0 auto; padding: 0 16px;">
+
 *A selection of technical projects involving machine learning, dashboard analytics and predictive modelling. Each card includes a short description, a skills snapshot and a link to explore the full work.*
 
 ---
@@ -14,7 +16,7 @@ author_profile: false
 <div class="project-card" style="
   border-left: 6px solid #475569;
   padding: 24px;
-  margin-bottom: 36px;
+  margin: 0 auto 36px auto;
   background: #fafafa;
   border-radius: 10px;
   box-shadow: 0 4px 14px rgba(0,0,0,0.06);
@@ -46,7 +48,7 @@ A personlised recommendation system built using the Discogs API to analyse my co
 </div>
 
 <ul style="margin-top: 8px; margin-bottom:14px; padding-left: 1.2rem;">
-  <li>Python (Pandas, Numpy, Skikit-learn, SkiPy)</li>
+  <li>Python (Pandas, Numpy, Skikit-learn, SciPy)</li>
   <li>JSON API integration and rate-limited ETL pipeline design (Discogs API)</li>
   <li>Content-based recommender modelling (TF-IDF, cosine similarity)</li>
   <li>Custom scoring logic for weighting and feature scaling</li>
@@ -65,7 +67,7 @@ A personlised recommendation system built using the Discogs API to analyse my co
 <div class="project-card" style="
   border-left: 6px solid #475569;
   padding: 24px;
-  margin-bottom: 36px;
+  margin: 0 auto 36px auto;
   background: #fafafa;
   border-radius: 10px;
   box-shadow: 0 4px 14px rgba(0,0,0,0.06);
@@ -118,7 +120,7 @@ A personlised recommendation system built using the Discogs API to analyse my co
 <div class="project-card" style="
   border-left: 6px solid #475569;
   padding: 24px;
-  margin-bottom: 36px;
+  margin: 0 auto 36px auto;
   background: #fafafa;
   border-radius: 10px;
   box-shadow: 0 4px 14px rgba(0,0,0,0.06);
@@ -152,7 +154,7 @@ A personlised recommendation system built using the Discogs API to analyse my co
 </div>
 
 <ul style="margin-top: 8px; margin-bottom:14px; padding-left: 1.2rem;">
-  <li>Python (Pandas, Numpy, Seaborn, Skikit-learn)</li>
+  <li>Python (Pandas, Numpy, Seaborn, Scikit-learn)</li>
   <li>Feature engineering</li>
   <li>Model evaluation (ROC-AUC, cross-validation)</li>
   <li>Performance comparison</li>
@@ -162,5 +164,7 @@ A personlised recommendation system built using the Discogs API to analyse my co
 <a href="https://github.com/barneypinkerton/termdeposit-ml/blob/main/td_ml_v2.ipynb" target="_blank" rel="noopener noreferrer">
   View project on GitHub &rarr;
 </a>
+
+</div>
 
 </div>
