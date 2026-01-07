@@ -164,5 +164,3 @@ A personlised recommendation system built using the Discogs API to analyse my co
 </a>
 
 </div>
-
-</div>
