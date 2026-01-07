@@ -79,14 +79,49 @@
   line-height: 1.6;
 }
 
-/* MOBILE STACKING */
+/* MOBILE STACKING + MOBILE OPTIMISATION */
 @media (max-width: 768px) {
+  /* Let the hero content breathe so the card never visually collides with footer */
+  .layout--splash .page__hero--overlay {
+    min-height: auto;        /* stop forcing 100vh on mobile */
+    padding-bottom: 4rem;    /* breathing room before footer */
+  }
+
   .home-hero-overlay {
+    position: relative;      /* key fix: remove absolute positioning on mobile */
+    left: auto;
+    top: auto;
+    transform: none;
+
+    width: auto;
+    margin: 1.25rem 1rem 2.5rem; /* bottom margin keeps it away from footer */
+    max-width: 100%;
+
     flex-direction: column;
     align-items: flex-start;
-    padding: 1.75rem 1.75rem;
-    margin: 0 1rem;
-    top: 55%;                 /* use % on mobile so it sits nicely */
-    transform: translate(-50%, -50%);
+
+    padding: 1.75rem 1.75rem 2.25rem; /* extra bottom padding = nicer scroll */
+    gap: 1.5rem;
+  }
+
+  /* Slightly smaller headshot so it doesn’t dominate the viewport */
+  .home-headshot {
+    width: 130px;
+    height: 130px;
+    margin-bottom: 0.75rem;
+  }
+
+  .home-hero-left {
+    flex: 0 0 auto;
+  }
+
+  /* Optional: slightly tighter typography for mobile */
+  .home-name {
+    font-size: 1.6rem;
+  }
+
+  .home-hero-right {
+    font-size: 1rem;
+    line-height: 1.65;
   }
 }
