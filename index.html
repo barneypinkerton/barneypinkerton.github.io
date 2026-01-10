@@ -2,10 +2,131 @@
 layout: splash
 permalink: /
 title: "Home"
+classes: home-hero
 header:
   overlay_image: /assets/images/hometown.jpg
   overlay_filter: 0.0
 ---
+
+<style>
+/* =====================================
+   HOME HERO — FULLSCREEN BACKGROUND IMAGE
+   Keep your existing layout, just make the
+   overlay image fill the entire viewport.
+   ===================================== */
+
+/* Make the hero truly fullscreen and let the overlay image cover */
+.home-hero .page__hero--overlay {
+  min-height: 100vh;
+  width: 100vw;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 2rem 1.25rem;
+  box-sizing: border-box;
+}
+
+/* Remove the theme's max-width constraint that can "squish" the hero */
+.home-hero .wrapper,
+.home-hero .page__hero--overlay .wrapper {
+  max-width: none !important;
+  width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Hide the default hero inner content from Minimal Mistakes */
+.home-hero .page__hero-inner {
+  display: none !important;
+}
+
+/* Your existing custom container stays the same, but sits above bg */
+.home-hero-overlay {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 960px;
+
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+
+  padding: 2rem;
+  border-radius: 18px;
+
+  /* Keeping the same "card" feel over the background */
+  background: rgba(140, 145, 155, 0.90);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
+
+  box-sizing: border-box;
+}
+
+/* Left column */
+.home-hero-left {
+  flex: 0 0 260px;
+  text-align: center;
+}
+
+.home-headshot {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 999px;
+  border: 4px solid rgba(255,255,255,0.75);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  margin-bottom: 1rem;
+}
+
+.home-name {
+  font-size: 1.9rem;
+  font-weight: 800;
+  margin-bottom: 0.4rem;
+}
+
+.home-tagline {
+  font-size: 1.05rem;
+  line-height: 1.35;
+  opacity: 0.95;
+}
+
+/* Right column */
+.home-hero-right {
+  flex: 1 1 auto;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.home-hero-right p:first-child {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+/* MOBILE: stack columns and keep everything centered */
+@media (max-width: 768px) {
+  .home-hero-overlay {
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 1.5rem 1.25rem;
+    text-align: center;
+  }
+
+  .home-hero-left {
+    flex: 0 0 auto;
+  }
+
+  .home-hero-right {
+    text-align: left; /* change to center if you prefer */
+  }
+}
+</style>
 
 <div class="home-hero-overlay">
 
