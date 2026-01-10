@@ -46,8 +46,6 @@
 /* LEFT COLUMN (HEADSHOT ONLY) */
 .home-hero-left {
   flex: 0 0 260px;
-
-  /* ✅ re-centre the photo now that text is hidden */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,7 +61,7 @@
   box-shadow: 0 6px 20px rgba(0,0,0,0.4);
 }
 
-/* ✅ Hide name + tagline (Option A) */
+/* Hide name + tagline */
 .home-name,
 .home-tagline {
   display: none;
@@ -78,27 +76,41 @@
 }
 
 /* =====================================
-   CENTER CONTENT WHEN AUTHOR SIDEBAR IS HIDDEN
+   PROJECTS PAGE — FORCE TRUE CENTERING
    ===================================== */
 
-/* Remove sidebar spacing entirely */
-.layout--single:not(.layout--single-author) .sidebar {
-  display: none;
+/* Remove sidebar entirely */
+.projects-page .sidebar {
+  display: none !important;
 }
 
-/* Allow content to expand and center */
-.layout--single:not(.layout--single-author) .page__content {
-  margin-left: auto;
-  margin-right: auto;
-  float: none;
+/* Remove float/offset applied by theme */
+.projects-page .page__content {
+  float: none !important;
+  width: 100% !important;
+  margin: 0 auto !important;
 }
 
-/* Optional: slightly wider reading width (nice for project cards) */
-.layout--single:not(.layout--single-author) .page {
-  max-width: 1100px;
+/* Center inner wrapper and control width */
+.projects-page .page__inner-wrap {
+  float: none !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 1100px; /* adjust to 1200–1280px if desired */
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-/* MOBILE STACKING + MOBILE OPTIMISATION */
+/* Ensure project cards can span full width */
+.projects-page .archive {
+  float: none !important;
+  width: 100% !important;
+}
+
+/* =====================================
+   MOBILE STACKING + MOBILE OPTIMISATION
+   ===================================== */
+
 @media (max-width: 768px) {
 
   .layout--splash .page__hero--overlay {
@@ -117,7 +129,7 @@
     max-width: 100%;
 
     flex-direction: column;
-    align-items: center; /* centre the headshot on mobile */
+    align-items: center;
 
     padding: 1.75rem 1.75rem 2.25rem;
     gap: 1.5rem;
