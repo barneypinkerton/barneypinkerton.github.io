@@ -76,33 +76,36 @@
 }
 
 /* =====================================
-   PROJECTS PAGE — FORCE TRUE CENTERING
+   PROJECTS + WRITING — TRUE VISUAL CENTERING
+   (Fixes Minimal Mistakes "wide" left padding offset)
    ===================================== */
 
-/* Remove sidebar entirely */
-.projects-page .sidebar {
+.projects-page .sidebar,
+.writing-page .sidebar {
   display: none !important;
 }
 
-/* Remove float/offset applied by theme */
-.projects-page .page__content {
+.projects-page .page__inner-wrap,
+.writing-page .page__inner-wrap {
+  float: none !important;
+  margin: 0 auto !important;
+
+  /* Key fix: remove asymmetric padding introduced by `wide` */
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+
+  max-width: 1100px; /* bump to 1200–1280px if you want wider */
+}
+
+.projects-page .page__content,
+.writing-page .page__content {
   float: none !important;
   width: 100% !important;
   margin: 0 auto !important;
 }
 
-/* Center inner wrapper and control width */
-.projects-page .page__inner-wrap {
-  float: none !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  max-width: 1100px; /* adjust to 1200–1280px if desired */
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-/* Ensure project cards can span full width */
-.projects-page .archive {
+.projects-page .archive,
+.writing-page .archive {
   float: none !important;
   width: 100% !important;
 }
