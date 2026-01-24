@@ -84,4 +84,4 @@ collections:
     permalink: /projects/:path/
 
 # Tab image 
-favicon: /assets/images/bio-pic.png
+favicon: /assets/images/favicon.png
