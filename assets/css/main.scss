@@ -125,3 +125,14 @@
   width: 180px;
   height: auto;
 }
+
+/* Disable avatar hover shading */
+.author__avatar img {
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+.author__avatar img:hover {
+  opacity: 1 !important;
+  filter: none !important;
+}
