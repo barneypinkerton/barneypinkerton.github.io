@@ -81,11 +81,16 @@
 
 @media (max-width: 768px) {
 
+  /* ---- UPDATE: move the hero image from "banner" to "card" ---- */
+
+  /* 1) Remove the top banner image on mobile */
   .layout--splash .page__hero--overlay {
-    min-height: auto;
-    padding-bottom: 4rem;
+    min-height: 0 !important;
+    padding: 0 !important;
+    background: none !important;
   }
 
+  /* 2) Put the image on the card instead (zoomed/cropped) */
   .home-hero-overlay {
     position: relative;
     left: auto;
@@ -101,6 +106,29 @@
 
     padding: 1.75rem 1.75rem 2.25rem;
     gap: 1.5rem;
+
+    /* card background image (zoomed) */
+    background-image: url("/assets/images/hometown.jpg"); /* <-- ensure this path is correct */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    overflow: hidden; /* keeps rounded corners clean */
+  }
+
+  /* 3) Overlay for readability */
+  .home-hero-overlay::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 0;
+  }
+
+  /* 4) Ensure content sits above overlay */
+  .home-hero-overlay > * {
+    position: relative;
+    z-index: 1;
   }
 
   .home-headshot {
@@ -142,6 +170,4 @@
   .sidebar {
     margin-bottom: 0 !important;
   }
-
 }
-
