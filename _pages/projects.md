@@ -20,7 +20,7 @@ author_profile: true
   box-shadow: 0 4px 14px rgba(0,0,0,0.06);
 ">
 
-<h2 style="margin-top:0;">Discogs Recommendation Algorithm</h2>
+<h2 style="margin-top:0;">Discogs Recommendation Model</h2>
 <div style="color:#666; font-size:0.95em; margin-bottom:10px;">
   Machine Learning · 2025
 </div>
@@ -77,7 +77,7 @@ A personlised recommendation system built using the Discogs API to analyse my co
 </div>
 
 <p>
-  A Tableau dashboard analysing listening patterns across songs, artists,
+  A Tableau Public dashboard analysing listening patterns across songs, artists,
   albums and genres. Includes dynamic parameters, ranking logic, calculated fields,
   and an integrated UX-focused layout for storytelling, happy clicking!
 </p>
