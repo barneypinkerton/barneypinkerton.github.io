@@ -118,3 +118,10 @@
     text-align: left;
   }
 }
+
+/* Make author avatar larger (Writing page profile) */
+.author__avatar img {
+  max-width: 180px;   /* try 160–220 */
+  width: 180px;
+  height: auto;
+}
