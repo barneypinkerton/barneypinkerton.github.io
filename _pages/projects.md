@@ -6,7 +6,7 @@ classes: wide projects-page
 author_profile: true
 ---
 
-*A selection of technical projects involving machine learning, dashboard analytics and predictive modelling. Each card includes a short description, a skills snapshot and a link to explore the full work.*
+*A selection of technical projects involving machine learning, dashboard analytics and, predictive modelling. Each card includes a short description, a skills snapshot, and a link to explore the full work.*
 
 ---
 
@@ -78,7 +78,7 @@ A personlised recommendation system built using the Discogs API to analyse my co
 
 <p>
   A Tableau dashboard analysing listening patterns across songs, artists,
-  albums and genres. Includes dynamic parameters, ranking logic, calculated fields
+  albums and genres. Includes dynamic parameters, ranking logic, calculated fields,
   and an integrated UX-focused layout for storytelling, happy clicking!
 </p>
 
@@ -131,7 +131,7 @@ A personlised recommendation system built using the Discogs API to analyse my co
 
 <p>
   A supervised machine learning classifier predicting customer conversion for term
-  deposit campaigns. Includes preprocessing, feature engineering, model training and
+  deposit campaigns. Includes preprocessing, feature engineering, model training, and
   evaluation (ROC-AUC, CV).
 </p>
 
