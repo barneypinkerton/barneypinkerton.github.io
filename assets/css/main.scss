@@ -125,3 +125,23 @@
   width: 200px;
   height: auto;
 }
+
+/* =====================================
+   MOBILE: REMOVE AUTHOR PROFILE BLOCK
+   ===================================== */
+@media (max-width: 768px) {
+
+  /* Hide entire author card */
+  .author__avatar,
+  .author__content,
+  .author__urls-wrapper {
+    display: none !important;
+  }
+
+  /* Remove extra spacing it leaves behind */
+  .sidebar {
+    margin-bottom: 0 !important;
+  }
+
+}
+
