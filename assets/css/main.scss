@@ -136,3 +136,19 @@
   opacity: 1 !important;
   filter: none !important;
 }
+
+/* Kill any avatar dimming applied to wrapper/link/img */
+.author__avatar,
+.author__avatar a,
+.author__avatar img,
+.author__avatar a:hover,
+.author__avatar img:hover {
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+/* Optional: remove any hover transition so it doesn't "feel" interactive */
+.author__avatar a,
+.author__avatar img {
+  transition: none !important;
+}
