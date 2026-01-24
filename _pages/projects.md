@@ -47,7 +47,7 @@ A personlised recommendation system built using the Discogs API to analyse my co
 
 <ul style="margin-top: 8px; margin-bottom:14px; padding-left: 1.2rem;">
   <li>Python (Pandas, Numpy, Skikit-learn, SciPy)</li>
-  <li>JSON API integration and rate-limited ETL pipeline design (Discogs API)</li>
+  <li>JSON API integration and rate-limited ETL pipeline design</li>
   <li>Content-based recommender modelling (TF-IDF, cosine similarity)</li>
   <li>Custom scoring logic for weighting and feature scaling</li>
   <li>LLM prompt engineering for quick iteration and scaling</li>
