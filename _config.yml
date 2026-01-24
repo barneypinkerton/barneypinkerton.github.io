@@ -32,9 +32,9 @@ plugins:
 
 # Author profile (used in footer + optional profile boxes)
 author:
-  name   : "Barney Pinkerton"
+  name   : ""
   avatar : "/assets/images/bio-pic.png"
-  bio    : "Music Business & Technology @NYU"
+  bio    : ""
 
 # Footer icons
 footer:
