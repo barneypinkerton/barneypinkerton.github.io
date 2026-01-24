@@ -85,3 +85,8 @@ collections:
 
 # Tab image 
 favicon: /assets/images/favicon.png
+
+# Hide feed
+atom_feed:
+  hide: true
+
