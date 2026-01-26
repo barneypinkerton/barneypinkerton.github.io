@@ -26,7 +26,7 @@ author_profile: true
 </div>
 
 <p>
-A personlised recommendation system built using the Discogs API to analyse my collection and wantlist, then branch out through connected labels and artists. The model includes a desirability and rarity score that boosts high-want/low-have records while down-weighting over-owned ones. The result is a personalised engine for surfacing genuinely obscure (and hopefully cheap!) dance records I’m likely to enjoy.
+A personalised recommendation system built using the Discogs API to analyse my collection and wantlist, then branch out through connected labels and artists. The model includes a desirability and rarity score that boosts high-want/low-have records while down-weighting over-owned ones. The result is a personalised engine for surfacing genuinely obscure (and hopefully cheap!) dance records I’m likely to enjoy.
 </p>
 
 <div style="
@@ -46,7 +46,7 @@ A personlised recommendation system built using the Discogs API to analyse my co
 </div>
 
 <ul style="margin-top: 8px; margin-bottom:14px; padding-left: 1.2rem;">
-  <li>Python (Pandas, Numpy, Skikit-learn, SciPy)</li>
+  <li>Python (Pandas, Numpy, Scikit-learn, SciPy)</li>
   <li>JSON API integration and rate-limited ETL pipeline design</li>
   <li>Content-based recommender modelling (TF-IDF, cosine similarity)</li>
   <li>Custom scoring logic for weighting and feature scaling</li>
@@ -73,7 +73,7 @@ A personlised recommendation system built using the Discogs API to analyse my co
 
 <h2 style="margin-top:0;">Apple Music Listening Analytics Dashboard</h2>
 <div style="color:#666; font-size:0.95em; margin-bottom:10px;">
-  Data Visualization · 2025
+  Data Visualisation · 2025
 </div>
 
 <p>
@@ -100,7 +100,7 @@ A personlised recommendation system built using the Discogs API to analyse my co
 
 <ul style="margin-top: 8px; margin-bottom:14px; padding-left: 1.2rem;">
   <li>Tableau (calculated fields, parameters, LODs, dynamic sorting and grouping)</li>
-  <li>Script Editor and Python based ETL</li>
+  <li>Script Editor and Python-based ETL</li>
   <li>Time-based filtering</li>
   <li>Dashboard UX design</li>
   <li>Interactive storytelling</li>
