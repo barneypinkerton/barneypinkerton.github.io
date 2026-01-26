@@ -24,7 +24,7 @@ author_profile: true
 </div>
 
 <p style="margin-bottom:10px;">
-  <em>“Within minutes, the mundane formalites that dominate day to day life begin to fade to
+  <em>“Within minutes, the mundane formalities that dominate day to day life begin to fade to
        black — replaced by rhythm, colour, and shared energy." </em>
 </p>
 
@@ -77,7 +77,7 @@ author_profile: true
 </div>
 
 <p style="margin-bottom:10px;">
-  <em>“These venues not only provide spaces for artists to preform, but are immersive environments that merge
+  <em>“These venues not only provide spaces for artists to perform, but are immersive environments that merge
    architecture, sound, food and art to provide a uniquely holistic experience to the point
    where audiences attend not only for the performances but to experience the aesthetic
    of the venues as well.”</em>
