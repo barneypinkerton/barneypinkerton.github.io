@@ -78,8 +78,8 @@ A personalised recommendation system built using the Discogs API to analyse my c
 
 <p>
   A Tableau Public dashboard analysing listening patterns across songs, artists,
-  albums and genres. Includes dynamic parameters, ranking logic, calculated fields,
-  and an integrated UX-focused layout for storytelling, happy clicking!
+  albums, and genres. Includes parameters, ranking logic, calculated fields,
+  and an integrated UX-focused layout for dynamic analysis – happy clicking!
 </p>
 
 <div style="
