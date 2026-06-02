@@ -53,7 +53,7 @@ A personalised recommendation system built using the Discogs API to analyse my c
   <li>LLM prompt engineering for quick iteration and scaling</li>
 </ul>
 
-<a href="https://github.com/barneypinkerton/discogs-ml/blob/main/discogs_ml_v10.ipynb" target="_blank" rel="noopener noreferrer">
+<a href="https://github.com/barneypinkerton/discogs-ml" target="_blank" rel="noopener noreferrer">
   View project on GitHub &rarr;
 </a>
 
