@@ -40,6 +40,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       if (frame.children.length === 0) {
         const iframe = document.createElement('iframe');
         iframe.src = btn.dataset.src + '#toolbar=0&navpanes=0';
+        iframe.style.cssText = 'display:block;width:100%;height:85vh;min-height:600px;border:none;border-radius:8px;box-shadow:0 4px 20px rgba(0,0,0,0.1);margin-top:14px;';
         frame.appendChild(iframe);
         btn.textContent = '▼  Close reader';
       } else {
