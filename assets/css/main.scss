@@ -147,6 +147,57 @@
   }
 }
 
+/* =====================================
+   CARD COMPONENTS
+   ===================================== */
+
+.project-card {
+  border-left: 6px solid #475569;
+  padding: 24px;
+  margin: 0 auto 36px auto;
+  background: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+
+  h2 { margin-top: 0; }
+
+  ul {
+    margin-top: 8px;
+    margin-bottom: 14px;
+    padding-left: 1.2rem;
+  }
+}
+
+.writing-card {
+  border-left: 4px solid #475569;
+  padding: 20px;
+  margin-bottom: 32px;
+  background: #fafafa;
+  border-radius: 6px;
+
+  h2 { margin-top: 0; }
+}
+
+.card-meta {
+  color: #666;
+  font-size: 0.95em;
+  margin-bottom: 10px;
+}
+
+.skills-badge {
+  margin-top: 10px;
+  margin-bottom: 6px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: #475569;
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
 /* Make author avatar larger (Writing page profile) */
 .author__avatar img {
   max-width: 200px;   /* try 160–220 */
