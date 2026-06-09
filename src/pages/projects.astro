@@ -9,15 +9,16 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <div class="card reveal">
       <h2>Discogs Recommendation Model</h2>
       <div class="card-meta">Machine Learning · 2025</div>
-      <p>A personalised recommendation system built using the Discogs API to analyse my collection and wantlist, then branch out through connected labels and artists. The model includes a desirability and rarity score that boosts high-want/low-have records while down-weighting over-owned ones. The result is a personalised engine for surfacing genuinely obscure (and hopefully cheap!) dance records I'm likely to enjoy.</p>
+      <p>A personalised vinyl recommender built on the full Discogs catalog (~10GB SQLite). It runs a five-stage pipeline: ingesting the monthly Discogs data dump, syncing my collection and wantlist via the API, generating a 50k candidate pool using label family graphs and artist/style affinity, ranking by metadata score, then re-ranking the top 100 using Essentia EffNet audio embeddings sourced from YouTube to find records that genuinely sound like my collection. Hard caps on community haves/wants keep results underground.</p>
       <div class="skills-list">
         <span class="skill-tag">Python</span>
-        <span class="skill-tag">Pandas · NumPy · Scikit-learn</span>
-        <span class="skill-tag">JSON API Integration</span>
+        <span class="skill-tag">SQLite</span>
+        <span class="skill-tag">Discogs API</span>
         <span class="skill-tag">ETL Pipeline Design</span>
-        <span class="skill-tag">TF-IDF · Cosine Similarity</span>
-        <span class="skill-tag">Custom Scoring Logic</span>
-        <span class="skill-tag">LLM Prompt Engineering</span>
+        <span class="skill-tag">Graph-based Affinity Scoring</span>
+        <span class="skill-tag">Essentia EffNet Audio Embeddings</span>
+        <span class="skill-tag">Cosine Similarity</span>
+        <span class="skill-tag">yt-dlp · ffmpeg</span>
       </div>
       <a href="https://github.com/barneypinkerton/discogs-ml" target="_blank" rel="noopener noreferrer" class="card-link">View project on GitHub →</a>
     </div>
