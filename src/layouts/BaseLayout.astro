@@ -1,0 +1,41 @@
+---
+interface Props {
+  title?: string;
+}
+const { title = 'Barney Pinkerton' } = Astro.props;
+const path = Astro.url.pathname;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+  <link rel="stylesheet" href="/styles/global.css" />
+</head>
+<body>
+  <nav class="masthead">
+    <div class="masthead__inner">
+      <a href="/" class="site-title">Barney Pinkerton</a>
+      <div class="nav-links">
+        <a href="/projects" class={path.startsWith('/projects') ? 'active' : ''}>Projects</a>
+        <a href="/writing" class={path.startsWith('/writing') ? 'active' : ''}>Writing</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <slot />
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="mailto:barneyjpinkerton@gmail.com">✉ Email</a>
+      <a href="https://www.linkedin.com/in/barney-p-49b439178" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://github.com/barneypinkerton" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+    <p class="footer-copy">© {new Date().getFullYear()} Barney Pinkerton. Built with Astro.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,229 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Projects — Barney Pinkerton">
+  <div class="page-content">
+    <h1>Projects</h1>
+    <p class="page-intro">A selection of technical projects involving machine learning, dashboard analytics, and predictive modelling. Each card includes a short description, a skills snapshot, and a link to explore the full work.</p>
+
+    <div class="card reveal">
+      <h2>Discogs Recommendation Model</h2>
+      <div class="card-meta">Machine Learning · 2025</div>
+      <p>A personalised recommendation system built using the Discogs API to analyse my collection and wantlist, then branch out through connected labels and artists. The model includes a desirability and rarity score that boosts high-want/low-have records while down-weighting over-owned ones. The result is a personalised engine for surfacing genuinely obscure (and hopefully cheap!) dance records I'm likely to enjoy.</p>
+      <span class="badge">Skills</span>
+      <ul>
+        <li>Python (Pandas, Numpy, Scikit-learn, SciPy)</li>
+        <li>JSON API integration and rate-limited ETL pipeline design</li>
+        <li>Content-based recommender modelling (TF-IDF, cosine similarity)</li>
+        <li>Custom scoring logic for weighting and feature scaling</li>
+        <li>LLM prompt engineering for quick iteration and scaling</li>
+      </ul>
+      <a href="https://github.com/barneypinkerton/discogs-ml" target="_blank" rel="noopener noreferrer" class="card-link">View project on GitHub →</a>
+    </div>
+
+    <div class="card reveal">
+      <h2>Apple Music Listening Analytics Dashboard</h2>
+      <div class="card-meta">Data Visualisation · 2025</div>
+      <p>A Tableau Public dashboard visualising listening patterns across songs, artists, albums, and genres. Includes parameters, ranking logic, calculated fields, and an integrated UX-focused layout for dynamic analysis – happy clicking!</p>
+
+      <div class="tableau-wrap">
+        <div id="viz_apple_music" style="position:relative; width:100%;"></div>
+      </div>
+
+      <span class="badge">Skills</span>
+      <ul>
+        <li>Tableau (calculated fields, parameters, LODs, dynamic sorting and grouping)</li>
+        <li>Script Editor and Python-based ETL</li>
+        <li>Time-based filtering</li>
+        <li>Dashboard UX design</li>
+        <li>Interactive storytelling</li>
+      </ul>
+      <a href="https://public.tableau.com/app/profile/barnaby.pinkerton/viz/AppleMusicDashboard_17647709521790/AppleMusicDashboard?publish=yes" target="_blank" rel="noopener noreferrer" class="card-link">Open full dashboard in Tableau Public →</a>
+    </div>
+
+    <div class="card reveal">
+      <h2>Term Deposit Subscription Prediction Model</h2>
+      <div class="card-meta">Predictive Modelling · 2024</div>
+      <p>A supervised machine learning classifier predicting customer conversion for term deposit campaigns. Includes preprocessing, feature engineering, model training, and evaluation (ROC-AUC, CV).</p>
+      <span class="badge">Skills</span>
+      <ul>
+        <li>Python (Pandas, Numpy, Seaborn, Scikit-learn)</li>
+        <li>Feature engineering</li>
+        <li>Model evaluation (ROC-AUC, cross-validation)</li>
+        <li>Performance comparison</li>
+        <li>Jupyter notebook workflow</li>
+      </ul>
+      <a href="https://github.com/barneypinkerton/termdeposit-ml/blob/main/td_ml_v2.ipynb" target="_blank" rel="noopener noreferrer" class="card-link">View project on GitHub →</a>
+    </div>
+  </div>
+</BaseLayout>
+
+<script is:inline>
+  // Tableau embed
+  (function () {
+    var container = document.getElementById('viz_apple_music');
+    if (!container) return;
+    var maxW = 1016;
+    var w = Math.min(container.parentElement.offsetWidth || maxW, maxW);
+
+    var obj = document.createElement('object');
+    obj.className = 'tableauViz';
+    obj.style.cssText = 'width:' + w + 'px;height:827px;display:block;margin:0 auto;';
+
+    var params = {
+      host_url: 'https%3A%2F%2Fpublic.tableau.com%2F',
+      embed_code_version: '3',
+      site_root: '',
+      name: 'AppleMusicDashboard_17647709521790/AppleMusicDashboard',
+      tabs: 'no',
+      toolbar: 'yes',
+      animate_transition: 'yes',
+      display_static_image: 'yes',
+      display_spinner: 'yes',
+      display_overlay: 'yes',
+      display_count: 'yes',
+      language: 'en-US',
+      filter: 'publish=yes',
+    };
+    Object.entries(params).forEach(function ([k, v]) {
+      var p = document.createElement('param');
+      p.name = k; p.value = v;
+      obj.appendChild(p);
+    });
+    container.appendChild(obj);
+
+    var s = document.createElement('script');
+    s.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    document.body.appendChild(s);
+  })();
+
+  // Scroll reveal
+  var cards = document.querySelectorAll('.reveal');
+  cards.forEach(function (el, i) {
+    el.style.transitionDelay = (i * 0.08) + 's';
+  });
+  var obs = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+  cards.forEach(function (el) { obs.observe(el); });
+</script>
+
+<style>
+  .page-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 2rem 4rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #0f172a;
+  }
+
+  .page-intro {
+    color: #64748b;
+    font-style: italic;
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+  }
+
+  .card {
+    background: #fff;
+    border-left: 5px solid #475569;
+    border-radius: 12px;
+    padding: 28px 32px 22px;
+    margin-bottom: 36px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 32px rgba(0,0,0,0.11);
+    border-color: #334155;
+  }
+
+  .card h2 {
+    margin: 0 0 4px;
+    font-size: 1.25rem;
+    color: #0f172a;
+  }
+
+  .card-meta {
+    color: #888;
+    font-size: 0.82em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .card p {
+    color: #334155;
+    line-height: 1.65;
+    margin-bottom: 14px;
+  }
+
+  .badge {
+    display: inline-block;
+    background: #475569;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 5px 13px;
+    border-radius: 999px;
+    margin-bottom: 8px;
+  }
+
+  .card ul {
+    color: #334155;
+    padding-left: 1.2rem;
+    margin: 0 0 16px;
+    line-height: 1.7;
+  }
+
+  .card-link {
+    font-weight: 500;
+    color: #475569;
+    text-decoration: none;
+    position: relative;
+  }
+
+  .card-link::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    height: 1.5px;
+    background: currentColor;
+    transition: width 0.25s ease;
+  }
+
+  .card-link:hover::after { width: 100%; }
+
+  .tableau-wrap {
+    margin: 16px 0;
+    overflow-x: auto;
+  }
+
+  /* Scroll reveal */
+  .reveal {
+    opacity: 0;
+    transform: translateY(36px);
+    transition: opacity 0.55s ease, transform 0.55s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @media (max-width: 768px) {
+    .page-content { padding: 2rem 1rem 3rem; }
+  }
+</style>
