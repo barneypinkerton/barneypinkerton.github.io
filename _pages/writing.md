@@ -3,10 +3,10 @@ title: "Writing"
 permalink: /writing/
 layout: single
 classes: wide
-author_profile: true
+author_profile: false
 ---
 
-*A selection of essays, creative pieces and reflections on music, data, and culture. Each card includes a short excerpt — click through to read the full piece inline.*
+*A selection of essays, creative pieces and reflections on music, data, and culture. Each card includes a short excerpt — click to read the full piece inline.*
 
 ---
 
@@ -23,7 +23,7 @@ author_profile: true
 
 <details class="inline-reader">
   <summary>Read inline</summary>
-  <iframe src="/assets/writing/NYU Music Technology Experience.pdf"></iframe>
+  <iframe src="https://docs.google.com/viewer?url=https://barneypinkerton.github.io/assets/writing/NYU%20Music%20Technology%20Experience.pdf&embedded=true"></iframe>
 </details>
 
 </div>
@@ -42,7 +42,7 @@ author_profile: true
 
 <details class="inline-reader">
   <summary>Read inline</summary>
-  <iframe src="/assets/writing/NYU Coursework Essay.pdf"></iframe>
+  <iframe src="https://docs.google.com/viewer?url=https://barneypinkerton.github.io/assets/writing/NYU%20Coursework%20Essay.pdf&embedded=true"></iframe>
 </details>
 
 </div>
@@ -64,7 +64,7 @@ author_profile: true
 
 <details class="inline-reader">
   <summary>Read inline</summary>
-  <iframe src="/assets/writing/NYU Music Business Admission Essay.pdf"></iframe>
+  <iframe src="https://docs.google.com/viewer?url=https://barneypinkerton.github.io/assets/writing/NYU%20Music%20Business%20Admission%20Essay.pdf&embedded=true"></iframe>
 </details>
 
 </div>
