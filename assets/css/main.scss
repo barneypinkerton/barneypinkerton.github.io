@@ -9,33 +9,32 @@
    HOME HERO CUSTOM LAYOUT
    ===================================== */
 
-/* Make hero fill the full height of the screen */
 .layout--splash .page__hero--overlay {
   min-height: 100vh;
   position: relative;
 }
 
-/* Hide the big default title ("Barney Pinkerton") */
 .layout--splash .page__title,
 .layout--splash h1.page__title {
   display: none !important;
 }
 
-/* BIO CARD OVER HERO */
 .home-hero-overlay {
   position: absolute;
   left: 50%;
-  top: 210px;
-  transform: translateX(-50%);
+  top: 50%;
+  transform: translate(-50%, -50%);
 
   width: 90%;
   max-width: 1100px;
 
   padding: 2.5rem 3rem;
-  background: rgba(15, 23, 42, 0.45);
-  backdrop-filter: blur(8px);
+  background: rgba(15, 23, 42, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-radius: 22px;
-  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
 
   display: flex;
   gap: 3rem;
@@ -43,7 +42,6 @@
   z-index: 20;
 }
 
-/* LEFT COLUMN (HEADSHOT ONLY) */
 .home-hero-left {
   flex: 0 0 260px;
   display: flex;
@@ -51,28 +49,39 @@
   justify-content: center;
 }
 
-/* Headshot styling */
 .home-headshot {
-  width: 250px;
-  height: 250px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid rgba(255,255,255,0.9);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  border: 3px solid rgba(255,255,255,0.75);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.45);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+  &:hover {
+    transform: scale(1.04);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.55);
+  }
 }
 
-/* Hide name + tagline */
 .home-name,
 .home-tagline {
   display: none;
 }
 
-/* RIGHT COLUMN (ABOUT TEXT) */
 .home-hero-right {
   flex: 1;
-  color: #f9fafb;
+  color: #f1f5f9;
   font-size: 1rem;
-  line-height: 1.6;
+  line-height: 1.7;
+
+  p { margin-bottom: 0.9rem; }
+
+  p:first-child {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #fff;
+  }
 }
 
 /* =====================================
@@ -81,16 +90,12 @@
 
 @media (max-width: 768px) {
 
-  /* ---- UPDATE: move the hero image from "banner" to "card" ---- */
-
-  /* 1) Remove the top banner image on mobile */
   .layout--splash .page__hero--overlay {
     min-height: 0 !important;
     padding: 0 !important;
     background: none !important;
   }
 
-  /* 2) Put the image on the card instead (zoomed/cropped) */
   .home-hero-overlay {
     position: relative;
     left: auto;
@@ -107,25 +112,22 @@
     padding: 1.75rem 1.75rem 2.25rem;
     gap: 1.5rem;
 
-    /* card background image (zoomed) */
-    background-image: url("/assets/images/hometown.jpg"); /* <-- ensure this path is correct */
+    background-image: url("/assets/images/hometown.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
-    overflow: hidden; /* keeps rounded corners clean */
+    overflow: hidden;
   }
 
-  /* 3) Overlay for readability */
   .home-hero-overlay::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.35);
+    background: rgba(0, 0, 0, 0.45);
     z-index: 0;
   }
 
-  /* 4) Ensure content sits above overlay */
   .home-hero-overlay > * {
     position: relative;
     z-index: 1;
@@ -152,12 +154,19 @@
    ===================================== */
 
 .project-card {
-  border-left: 6px solid #475569;
-  padding: 24px;
+  border-left: 5px solid #475569;
+  padding: 28px 28px 20px;
   margin: 0 auto 36px auto;
-  background: #fafafa;
-  border-radius: 10px;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 32px rgba(0,0,0,0.11);
+    border-color: #334155;
+  }
 
   h2 { margin-top: 0; }
 
@@ -170,55 +179,153 @@
 
 .writing-card {
   border-left: 4px solid #475569;
-  padding: 20px;
+  padding: 22px 24px 18px;
   margin-bottom: 32px;
-  background: #fafafa;
-  border-radius: 6px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 28px rgba(0,0,0,0.1);
+    border-color: #334155;
+  }
 
   h2 { margin-top: 0; }
 }
 
 .card-meta {
-  color: #666;
-  font-size: 0.95em;
+  color: #888;
+  font-size: 0.88em;
+  letter-spacing: 0.03em;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .skills-badge {
   margin-top: 10px;
   margin-bottom: 6px;
-  padding: 6px 14px;
+  padding: 5px 13px;
   border-radius: 999px;
   background: #475569;
   display: inline-block;
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: .08em;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: .1em;
   text-transform: uppercase;
   color: #fff;
 }
 
-/* Make author avatar larger (Writing page profile) */
+/* Card link styling */
+.project-card a,
+.writing-card a {
+  position: relative;
+  font-weight: 500;
+  text-decoration: none;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    height: 1.5px;
+    background: currentColor;
+    transition: width 0.25s ease;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+/* =====================================
+   SCROLL REVEAL ANIMATIONS
+   ===================================== */
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(36px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =====================================
+   INLINE PDF READER
+   ===================================== */
+
+.inline-reader {
+  margin-top: 16px;
+
+  summary {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #475569;
+    padding: 6px 0;
+    user-select: none;
+    transition: color 0.2s ease;
+
+    &:hover { color: #1e293b; }
+    &::-webkit-details-marker { display: none; }
+
+    &::before {
+      content: '▶  ';
+      font-size: 0.7em;
+      transition: transform 0.2s ease;
+      display: inline-block;
+    }
+  }
+
+  &[open] summary::before {
+    transform: rotate(90deg);
+  }
+
+  iframe {
+    display: block;
+    margin-top: 14px;
+    width: 100%;
+    height: 700px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  }
+}
+
+/* =====================================
+   AUTHOR AVATAR
+   ===================================== */
+
 .author__avatar img {
-  max-width: 200px;   /* try 160–220 */
-  width: 200px;
+  max-width: 120px;
+  width: 120px;
   height: auto;
+  border-radius: 50%;
 }
 
 /* =====================================
    MOBILE: REMOVE AUTHOR PROFILE BLOCK
    ===================================== */
+
 @media (max-width: 768px) {
 
-  /* Hide entire author card */
   .author__avatar,
   .author__content,
   .author__urls-wrapper {
     display: none !important;
   }
 
-  /* Remove extra spacing it leaves behind */
   .sidebar {
     margin-bottom: 0 !important;
+  }
+
+  .inline-reader iframe {
+    height: 500px;
   }
 }

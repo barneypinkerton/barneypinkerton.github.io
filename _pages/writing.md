@@ -6,7 +6,7 @@ classes: wide
 author_profile: true
 ---
 
-*A selection of essays, creative pieces and reflections on music, data, and culture. Each card includes a short excerpt – click through to read the full piece.*
+*A selection of essays, creative pieces and reflections on music, data, and culture. Each card includes a short excerpt — click through to read the full piece inline.*
 
 ---
 
@@ -21,9 +21,10 @@ author_profile: true
        black — replaced by rhythm, colour, and shared energy."</em>
 </p>
 
-<a href="/assets/writing/NYU Music Technology Experience.pdf" target="_blank" rel="noopener noreferrer">
-  Read full piece &rarr;
-</a>
+<details class="inline-reader">
+  <summary>Read inline</summary>
+  <iframe src="/assets/writing/NYU Music Technology Experience.pdf"></iframe>
+</details>
 
 </div>
 
@@ -39,9 +40,10 @@ author_profile: true
   <em>"The labels argue that Suno extracted the likeness of copyrighted works for its own gain without fairly compensating, drawing parallels to earlier challenges over uncredited session musicians, the faceless labour of 1920s sidemen now mirroring today's anonymous datasets that feed generative systems."</em>
 </p>
 
-<a href="/assets/writing/NYU Coursework Essay.pdf" target="_blank" rel="noopener noreferrer">
-  Read full piece &rarr;
-</a>
+<details class="inline-reader">
+  <summary>Read inline</summary>
+  <iframe src="/assets/writing/NYU Coursework Essay.pdf"></iframe>
+</details>
 
 </div>
 
@@ -60,9 +62,10 @@ author_profile: true
    of the venues as well."</em>
 </p>
 
-<a href="/assets/writing/NYU Music Business Admission Essay.pdf" target="_blank" rel="noopener noreferrer">
-  Read full piece &rarr;
-</a>
+<details class="inline-reader">
+  <summary>Read inline</summary>
+  <iframe src="/assets/writing/NYU Music Business Admission Essay.pdf"></iframe>
+</details>
 
 </div>
 
