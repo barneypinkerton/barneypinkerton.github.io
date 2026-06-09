@@ -10,14 +10,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <h2>Discogs Recommendation Model</h2>
       <div class="card-meta">Machine Learning · 2025</div>
       <p>A personalised recommendation system built using the Discogs API to analyse my collection and wantlist, then branch out through connected labels and artists. The model includes a desirability and rarity score that boosts high-want/low-have records while down-weighting over-owned ones. The result is a personalised engine for surfacing genuinely obscure (and hopefully cheap!) dance records I'm likely to enjoy.</p>
-      <span class="badge">Skills</span>
-      <ul>
-        <li>Python (Pandas, Numpy, Scikit-learn, SciPy)</li>
-        <li>JSON API integration and rate-limited ETL pipeline design</li>
-        <li>Content-based recommender modelling (TF-IDF, cosine similarity)</li>
-        <li>Custom scoring logic for weighting and feature scaling</li>
-        <li>LLM prompt engineering for quick iteration and scaling</li>
-      </ul>
+      <div class="skills-list">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Pandas · NumPy · Scikit-learn</span>
+        <span class="skill-tag">JSON API Integration</span>
+        <span class="skill-tag">ETL Pipeline Design</span>
+        <span class="skill-tag">TF-IDF · Cosine Similarity</span>
+        <span class="skill-tag">Custom Scoring Logic</span>
+        <span class="skill-tag">LLM Prompt Engineering</span>
+      </div>
       <a href="https://github.com/barneypinkerton/discogs-ml" target="_blank" rel="noopener noreferrer" class="card-link">View project on GitHub →</a>
     </div>
 
@@ -30,14 +31,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <div id="viz_apple_music" style="position:relative; width:100%;"></div>
       </div>
 
-      <span class="badge">Skills</span>
-      <ul>
-        <li>Tableau (calculated fields, parameters, LODs, dynamic sorting and grouping)</li>
-        <li>Script Editor and Python-based ETL</li>
-        <li>Time-based filtering</li>
-        <li>Dashboard UX design</li>
-        <li>Interactive storytelling</li>
-      </ul>
+      <div class="skills-list">
+        <span class="skill-tag">Tableau</span>
+        <span class="skill-tag">Calculated Fields · LODs</span>
+        <span class="skill-tag">Python ETL</span>
+        <span class="skill-tag">Time-based Filtering</span>
+        <span class="skill-tag">Dashboard UX Design</span>
+        <span class="skill-tag">Interactive Storytelling</span>
+      </div>
       <a href="https://public.tableau.com/app/profile/barnaby.pinkerton/viz/AppleMusicDashboard_17647709521790/AppleMusicDashboard?publish=yes" target="_blank" rel="noopener noreferrer" class="card-link">Open full dashboard in Tableau Public →</a>
     </div>
 
@@ -45,14 +46,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <h2>Term Deposit Subscription Prediction Model</h2>
       <div class="card-meta">Predictive Modelling · 2024</div>
       <p>A supervised machine learning classifier predicting customer conversion for term deposit campaigns. Includes preprocessing, feature engineering, model training, and evaluation (ROC-AUC, CV).</p>
-      <span class="badge">Skills</span>
-      <ul>
-        <li>Python (Pandas, Numpy, Seaborn, Scikit-learn)</li>
-        <li>Feature engineering</li>
-        <li>Model evaluation (ROC-AUC, cross-validation)</li>
-        <li>Performance comparison</li>
-        <li>Jupyter notebook workflow</li>
-      </ul>
+      <div class="skills-list">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Pandas · NumPy · Seaborn</span>
+        <span class="skill-tag">Scikit-learn</span>
+        <span class="skill-tag">Feature Engineering</span>
+        <span class="skill-tag">ROC-AUC · Cross-validation</span>
+        <span class="skill-tag">Jupyter Notebooks</span>
+      </div>
       <a href="https://github.com/barneypinkerton/termdeposit-ml/blob/main/td_ml_v2.ipynb" target="_blank" rel="noopener noreferrer" class="card-link">View project on GitHub →</a>
     </div>
   </div>
@@ -166,24 +167,29 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     margin-bottom: 14px;
   }
 
-  .badge {
-    display: inline-block;
-    background: #475569;
-    color: #fff;
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    padding: 5px 13px;
-    border-radius: 999px;
-    margin-bottom: 8px;
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 4px 0 18px;
   }
 
-  .card ul {
+  .skill-tag {
+    display: inline-block;
+    background: #f1f5f9;
     color: #334155;
-    padding-left: 1.2rem;
-    margin: 0 0 16px;
-    line-height: 1.7;
+    border: 1px solid #cbd5e1;
+    border-radius: 999px;
+    padding: 4px 12px;
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  }
+
+  .card:hover .skill-tag {
+    background: #e2e8f0;
+    border-color: #94a3b8;
   }
 
   .card-link {
