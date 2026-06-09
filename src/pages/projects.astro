@@ -63,12 +63,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   (function () {
     var container = document.getElementById('viz_apple_music');
     if (!container) return;
-    var maxW = 1016;
-    var w = Math.min(container.parentElement.offsetWidth || maxW, maxW);
+    var w = 960;
 
     var obj = document.createElement('object');
     obj.className = 'tableauViz';
-    obj.style.cssText = 'width:' + w + 'px;height:827px;display:block;margin:0 auto;';
+    obj.style.cssText = 'width:' + w + 'px;height:827px;flex-shrink:0;';
 
     var params = {
       host_url: 'https%3A%2F%2Fpublic.tableau.com%2F',
@@ -112,9 +111,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 <style>
   .page-content {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 3rem 2rem 4rem;
+    padding: 3rem 3rem 4rem;
   }
 
   h1 {
@@ -210,6 +209,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   .tableau-wrap {
     margin: 16px 0;
     overflow-x: auto;
+    display: flex;
+    justify-content: center;
   }
 
   /* Scroll reveal */
