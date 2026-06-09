@@ -82,8 +82,42 @@ A personalised recommendation system built using the Discogs API to analyse my c
   and an integrated UX-focused layout for dynamic analysis – happy clicking!
 </p>
 
+<div class='tableauPlaceholder' id='viz_apple_music' style='position:relative; width:100%; margin: 16px 0;'>
+  <noscript>
+    <a href='https://public.tableau.com/app/profile/barnaby.pinkerton/viz/AppleMusicDashboard_17647709521790/AppleMusicDashboard'>
+      <img alt='Apple Music Dashboard' src='https://public.tableau.com/static/images/Ap/AppleMusicDashboard_17647709521790/AppleMusicDashboard/1_rss.png' style='border: none; width:100%;' />
+    </a>
+  </noscript>
+  <object class='tableauViz' style='display:none;'>
+    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+    <param name='embed_code_version' value='3' />
+    <param name='site_root' value='' />
+    <param name='name' value='AppleMusicDashboard_17647709521790/AppleMusicDashboard' />
+    <param name='tabs' value='no' />
+    <param name='toolbar' value='yes' />
+    <param name='animate_transition' value='yes' />
+    <param name='display_static_image' value='yes' />
+    <param name='display_spinner' value='yes' />
+    <param name='display_overlay' value='yes' />
+    <param name='display_count' value='yes' />
+    <param name='language' value='en-US' />
+    <param name='filter' value='publish=yes' />
+  </object>
+</div>
+<script type='text/javascript'>
+  (function() {
+    var divElement = document.getElementById('viz_apple_music');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width = '100%';
+    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  })();
+</script>
+
 <div style="
-  margin-top: 10px;
+  margin-top: 16px;
   margin-bottom: 6px;
   padding: 6px 14px;
   border-radius: 999px;
@@ -107,7 +141,7 @@ A personalised recommendation system built using the Discogs API to analyse my c
 </ul>
 
 <a href="https://public.tableau.com/app/profile/barnaby.pinkerton/viz/AppleMusicDashboard_17647709521790/AppleMusicDashboard?publish=yes" target="_blank" rel="noopener noreferrer">
-  View dashboard on Tableau Public &rarr;
+  Open full dashboard in Tableau Public &rarr;
 </a>
 
 </div>
