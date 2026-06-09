@@ -29,9 +29,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <div class="card-meta">Personal · Data Visualisation · 2025</div>
       <p>A Tableau Public dashboard visualising listening patterns across songs, artists, albums, and genres. Includes parameters, ranking logic, calculated fields, and an integrated UX-focused layout for dynamic analysis – happy clicking!</p>
 
-      <div class="tableau-wrap">
+      <div class="tableau-wrap desktop-only">
         <div id="viz_apple_music" style="position:relative; width:100%;"></div>
       </div>
+      <a class="mobile-link mobile-only" href="https://public.tableau.com/app/profile/barnaby.pinkerton/viz/AppleMusicDashboard_17647709521790/AppleMusicDashboard?publish=yes" target="_blank" rel="noopener noreferrer">View dashboard on Tableau Public →</a>
 
       <div class="skills-list">
         <span class="skill-tag">Tableau</span>
@@ -232,7 +233,23 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     transform: translateY(0);
   }
 
+  .mobile-link {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #475569;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 16px;
+    transition: color 0.2s ease;
+  }
+
+  .mobile-link:hover { color: #1e293b; }
+
+  .mobile-only { display: none; }
+
   @media (max-width: 768px) {
     .page-content { padding: 2rem 1rem 3rem; }
+    .desktop-only { display: none !important; }
+    .mobile-only { display: inline-block; }
   }
 </style>
