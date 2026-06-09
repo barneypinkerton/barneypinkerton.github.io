@@ -21,10 +21,8 @@ author_profile: false
        black — replaced by rhythm, colour, and shared energy."</em>
 </p>
 
-<details class="inline-reader">
-  <summary>Read inline</summary>
-  <iframe src="https://docs.google.com/viewer?url=https://barneypinkerton.github.io/assets/writing/NYU%20Music%20Technology%20Experience.pdf&embedded=true"></iframe>
-</details>
+<button class="read-toggle" data-src="/assets/writing/NYU%20Music%20Technology%20Experience.pdf">&#9658;&nbsp; Read inline</button>
+<div class="reader-frame"></div>
 
 </div>
 
@@ -40,10 +38,8 @@ author_profile: false
   <em>"The labels argue that Suno extracted the likeness of copyrighted works for its own gain without fairly compensating, drawing parallels to earlier challenges over uncredited session musicians, the faceless labour of 1920s sidemen now mirroring today's anonymous datasets that feed generative systems."</em>
 </p>
 
-<details class="inline-reader">
-  <summary>Read inline</summary>
-  <iframe src="https://docs.google.com/viewer?url=https://barneypinkerton.github.io/assets/writing/NYU%20Coursework%20Essay.pdf&embedded=true"></iframe>
-</details>
+<button class="read-toggle" data-src="/assets/writing/NYU%20Coursework%20Essay.pdf">&#9658;&nbsp; Read inline</button>
+<div class="reader-frame"></div>
 
 </div>
 
@@ -62,10 +58,8 @@ author_profile: false
    of the venues as well."</em>
 </p>
 
-<details class="inline-reader">
-  <summary>Read inline</summary>
-  <iframe src="https://docs.google.com/viewer?url=https://barneypinkerton.github.io/assets/writing/NYU%20Music%20Business%20Admission%20Essay.pdf&embedded=true"></iframe>
-</details>
+<button class="read-toggle" data-src="/assets/writing/NYU%20Music%20Business%20Admission%20Essay.pdf">&#9658;&nbsp; Read inline</button>
+<div class="reader-frame"></div>
 
 </div>
 

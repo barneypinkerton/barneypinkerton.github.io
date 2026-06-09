@@ -50,7 +50,8 @@ A personalised recommendation system built using the Discogs API to analyse my c
   and an integrated UX-focused layout for dynamic analysis – happy clicking!
 </p>
 
-<div class='tableauPlaceholder' id='viz_apple_music' style='position:relative; width:100%; margin: 16px 0;'>
+<div class="tableau-container">
+<div class='tableauPlaceholder' id='viz_apple_music' style='position:relative; width:100%;'>
   <noscript>
     <a href='https://public.tableau.com/app/profile/barnaby.pinkerton/viz/AppleMusicDashboard_17647709521790/AppleMusicDashboard'>
       <img alt='Apple Music Dashboard' src='https://public.tableau.com/static/images/Ap/AppleMusicDashboard_17647709521790/AppleMusicDashboard/1_rss.png' style='border: none; width:100%;' />
@@ -77,12 +78,13 @@ A personalised recommendation system built using the Discogs API to analyse my c
     var divElement = document.getElementById('viz_apple_music');
     var vizElement = divElement.getElementsByTagName('object')[0];
     vizElement.style.width = '100%';
-    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+    vizElement.style.height = '827px';
     var scriptElement = document.createElement('script');
     scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
     vizElement.parentNode.insertBefore(scriptElement, vizElement);
   })();
 </script>
+</div>
 
 <div class="skills-badge">Skills</div>
 

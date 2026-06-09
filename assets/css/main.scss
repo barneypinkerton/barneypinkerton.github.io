@@ -22,10 +22,9 @@
   display: none !important;
 }
 
-/* Collapse the empty content area below the hero that causes white space */
+/* Hide the empty content area below the hero that causes white space */
 .layout--splash .page__content {
-  padding: 0;
-  margin: 0;
+  display: none;
 }
 
 .home-hero-overlay {
@@ -219,6 +218,12 @@
   color: #fff;
 }
 
+/* Tableau embed — constrained to native dashboard width */
+.tableau-container {
+  max-width: 1016px;
+  margin: 16px auto 0;
+}
+
 .project-card a,
 .writing-card a {
   position: relative;
@@ -260,44 +265,30 @@
    INLINE PDF READER
    ===================================== */
 
-.inline-reader {
-  margin-top: 18px;
+.read-toggle {
+  margin-top: 16px;
+  display: inline-block;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #475569;
+  transition: color 0.2s ease;
+  font-family: inherit;
 
-  summary {
-    cursor: pointer;
-    display: inline-block;
-    font-size: 0.88rem;
-    font-weight: 600;
-    color: #475569;
-    padding: 6px 0;
-    user-select: none;
-    list-style: none;
-    transition: color 0.2s ease;
+  &:hover { color: #1e293b; }
+}
 
-    &:hover { color: #1e293b; }
-    &::-webkit-details-marker { display: none; }
-
-    &::before {
-      content: '▶  ';
-      font-size: 0.7em;
-      display: inline-block;
-      transition: transform 0.2s ease;
-    }
-  }
-
-  &[open] summary::before {
-    transform: rotate(90deg);
-  }
-
-  iframe {
-    display: block;
-    margin-top: 14px;
-    width: 100%;
-    height: 750px;
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-  }
+.reader-frame iframe {
+  display: block;
+  margin-top: 14px;
+  width: 100%;
+  height: 750px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
 /* =====================================
