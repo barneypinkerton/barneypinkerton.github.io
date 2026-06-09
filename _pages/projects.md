@@ -77,8 +77,13 @@ A personalised recommendation system built using the Discogs API to analyse my c
   (function() {
     var divElement = document.getElementById('viz_apple_music');
     var vizElement = divElement.getElementsByTagName('object')[0];
-    vizElement.style.width = '100%';
+    var maxW = 1016;
+    var availW = divElement.parentElement.offsetWidth || maxW;
+    var w = Math.min(availW, maxW);
+    vizElement.style.width = w + 'px';
     vizElement.style.height = '827px';
+    vizElement.style.display = 'block';
+    vizElement.style.margin = '0 auto';
     var scriptElement = document.createElement('script');
     scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
     vizElement.parentNode.insertBefore(scriptElement, vizElement);
