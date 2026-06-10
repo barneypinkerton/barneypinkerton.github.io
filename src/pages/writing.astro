@@ -39,7 +39,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   // Lazy PDF reader — iframe only created on click
   document.querySelectorAll<HTMLButtonElement>('.read-btn').forEach(btn => {
     btn.addEventListener('click', () => {
-      const frame = btn.nextElementSibling as HTMLElement;
+      const frame = btn.closest('.card')!.querySelector('.reader-frame') as HTMLElement;
       if (frame.children.length === 0) {
         const iframe = document.createElement('iframe');
         iframe.src = btn.dataset.src + '#toolbar=0&navpanes=0';
