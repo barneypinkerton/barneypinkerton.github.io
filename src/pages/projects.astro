@@ -43,6 +43,31 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <span class="skill-tag">Interactive Storytelling</span>
       </div>
       <a href="https://public.tableau.com/app/profile/barnaby.pinkerton/viz/AppleMusicDashboard_17647709521790/AppleMusicDashboard?publish=yes" target="_blank" rel="noopener noreferrer" class="card-link">Open full dashboard in Tableau Public →</a>
+
+      <div class="analysis-section">
+        <h3 class="analysis-title">Story time / Analysis</h3>
+
+        <div class="analysis-block">
+          <h4 class="analysis-subtitle">Q4 2025</h4>
+          <p class="analysis-copy">
+            <!-- Write your Q4 2025 analysis here -->
+          </p>
+        </div>
+
+        <div class="analysis-block">
+          <h4 class="analysis-subtitle">March 2026</h4>
+          <p class="analysis-copy">
+            <!-- Write your March 2026 analysis here -->
+          </p>
+        </div>
+
+        <div class="analysis-block">
+          <h4 class="analysis-subtitle">April 2026</h4>
+          <p class="analysis-copy">
+            <!-- Write your April 2026 analysis here -->
+          </p>
+        </div>
+      </div>
     </div>
 
     <div class="card reveal">
@@ -244,6 +269,38 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   }
 
   .mobile-link:hover { color: #1e293b; }
+
+  .analysis-section {
+    margin-top: 28px;
+    padding-top: 24px;
+    border-top: 1px solid #e2e8f0;
+  }
+
+  .analysis-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0 0 20px;
+  }
+
+  .analysis-block {
+    margin-bottom: 20px;
+  }
+
+  .analysis-subtitle {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #475569;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin: 0 0 8px;
+  }
+
+  .analysis-copy {
+    color: #334155;
+    line-height: 1.7;
+    margin: 0;
+  }
 
   .mobile-only { display: none; }
 
