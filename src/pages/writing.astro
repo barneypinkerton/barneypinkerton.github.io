@@ -1,15 +1,15 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
-<BaseLayout title="Writing — Barney Pinkerton">
+<BaseLayout title="Writing - Barney Pinkerton">
   <div class="page-content">
     <h1>Writing</h1>
-    <p class="page-intro">A selection of essays, creative pieces and reflections on music, data, and culture. Each card includes a short excerpt — click to read the full piece inline.</p>
+    <p class="page-intro">A selection of essays, creative pieces and reflections on music, data, and culture. Each card includes a short excerpt - click to read the full piece inline.</p>
 
     <div class="card reveal">
       <h2>Music Technology Experience: Mister Sundays @Nowadays</h2>
       <div class="card-meta">NYU · Reflection · 2025</div>
-      <p><em>"Within minutes, the mundane formalities that dominate day to day life begin to fade to black — replaced by rhythm, colour, and shared energy."</em></p>
+      <p><em>"Within minutes, the mundane formalities that dominate day to day life begin to fade to black - replaced by rhythm, colour, and shared energy."</em></p>
       <button class="read-btn desktop-only" data-src="/assets/writing/NYU%20Music%20Technology%20Experience.pdf">▶&nbsp; Read inline</button>
       <a class="mobile-link mobile-only" href="/assets/writing/NYU%20Music%20Technology%20Experience.pdf" target="_blank" rel="noopener noreferrer">Open PDF →</a>
       <div class="reader-frame desktop-only"></div>
@@ -36,7 +36,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 </BaseLayout>
 
 <script>
-  // Lazy PDF reader — iframe only created on click
+  // Lazy PDF reader - iframe only created on click
   document.querySelectorAll<HTMLButtonElement>('.read-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       const frame = btn.closest('.card')!.querySelector('.reader-frame') as HTMLElement;
