@@ -16,12 +16,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <span class="skill-tag">LAION-CLAP</span>
         <span class="skill-tag">PyTorch</span>
         <span class="skill-tag">Librosa</span>
-        <span class="skill-tag">Scikit-learn</span>
         <span class="skill-tag">DSP · Spectrogram Analysis</span>
-        <span class="skill-tag">Audio Augmentation</span>
         <span class="skill-tag">Cosine Similarity</span>
-        <span class="skill-tag">Evaluation Pipelines</span>
-        <span class="skill-tag">Jupyter Notebooks</span>
       </div>
 
       <div class="reader-frame desktop-only">
@@ -35,18 +31,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <div class="card reveal">
       <h2>Discogs Recommendation Model</h2>
       <div class="card-meta">Personal · Machine Learning · 2025</div>
-      <p>A personalised vinyl recommender built on the full Discogs catalog (~10GB of SQLite). It syncs my collection and wantlist, builds a candidate pool from label and artist affinity, then re-ranks using audio embeddings pulled from YouTube – so picks actually sound like what I own, not just what's tagged similarly. Community-hype caps keep it underground.</p>
+      <p>A personalised vinyl recommender built on the full Discogs catalog (API/Data dumps). It syncs my collection and wantlist, builds a candidate pool from label and artist affinity, then re-ranks using audio embeddings pulled from YouTube – so picks actually sound like what I own, not just what's tagged similarly. Community-hype caps keep it underground.</p>
 
       <div class="skills-list">
         <span class="skill-tag">Python</span>
-        <span class="skill-tag">SQLite</span>
         <span class="skill-tag">Discogs API</span>
-        <span class="skill-tag">ETL Pipeline Design</span>
         <span class="skill-tag">Graph-based Affinity Scoring</span>
         <span class="skill-tag">Essentia EffNet Audio Embeddings</span>
         <span class="skill-tag">Cosine Similarity</span>
-        <span class="skill-tag">yt-dlp · ffmpeg</span>
-        <span class="skill-tag">Claude Code</span>
       </div>
 
       <div class="reader-frame desktop-only">
@@ -62,19 +54,19 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <div class="card-meta">Personal · Data Visualisation · 2025</div>
       <p>A Tableau Public (i.e free tier with limited functionality) dashboard visualising my listening habits across songs, artists, albums, and genres. Includes parameters, ranking logic, calculated fields, and an integrated UX-focused layout for fun/dynamic analysis – happy clicking!</p>
 
-      <div class="tableau-wrap desktop-only">
-        <div id="viz_apple_music" style="position:relative; width:100%;"></div>
-      </div>
-      <a class="mobile-link mobile-only" href="https://public.tableau.com/app/profile/barnaby.pinkerton/viz/AppleMusicDashboard_17647709521790/AppleMusicDashboard?publish=yes" target="_blank" rel="noopener noreferrer">View dashboard on Tableau Public →</a>
-
       <div class="skills-list">
         <span class="skill-tag">Tableau</span>
         <span class="skill-tag">Calculated Fields · LODs</span>
         <span class="skill-tag">Python ETL</span>
         <span class="skill-tag">Time-based Filtering</span>
         <span class="skill-tag">Dashboard UX Design</span>
-        <span class="skill-tag">Interactive Storytelling</span>
       </div>
+
+      <div class="tableau-wrap desktop-only">
+        <div id="viz_apple_music" style="position:relative; width:100%;"></div>
+      </div>
+      <a class="mobile-link mobile-only" href="https://public.tableau.com/app/profile/barnaby.pinkerton/viz/AppleMusicDashboard_17647709521790/AppleMusicDashboard?publish=yes" target="_blank" rel="noopener noreferrer">View dashboard on Tableau Public →</a>
+
       <a href="https://public.tableau.com/app/profile/barnaby.pinkerton/viz/AppleMusicDashboard_17647709521790/AppleMusicDashboard?publish=yes" target="_blank" rel="noopener noreferrer" class="card-link">Open full dashboard in Tableau Public →</a>
 
       <div class="analysis-section">
@@ -176,6 +168,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   }
 
   .card-link {
+    display: inline-block;
+    margin-top: 20px;
     font-weight: 500;
     color: #475569;
     text-decoration: none;
