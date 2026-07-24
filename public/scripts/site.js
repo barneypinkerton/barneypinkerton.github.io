@@ -5,10 +5,13 @@ document.querySelectorAll('.read-btn').forEach(function (btn) {
     var frame = btn.closest('.card').querySelector('.reader-frame');
     if (frame.children.length === 0) {
       var src = btn.dataset.src;
-      if (btn.dataset.pdf) src += '#toolbar=0&navpanes=0';
       var iframe = document.createElement('iframe');
+      if (btn.dataset.pdf) {
+        src += '#toolbar=0&navpanes=0';
+      } else {
+        iframe.setAttribute('sandbox', 'allow-scripts allow-same-origin');
+      }
       iframe.src = src;
-      iframe.setAttribute('sandbox', 'allow-scripts allow-same-origin');
       frame.appendChild(iframe);
       btn.textContent = '▼  Close';
     } else {
