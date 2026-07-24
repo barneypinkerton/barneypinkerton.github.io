@@ -1,27 +1,26 @@
-# Minimal Mistakes remote theme starter
+# barneypinkerton.github.io
 
-Click [**Use this template**](https://github.com/mmistakes/mm-github-pages-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
+Personal site built with [Astro](https://astro.build), deployed to GitHub Pages.
 
-Contains basic configuration to get you a site with:
+## Structure
 
-- Sample posts.
-- Sample top navigation.
-- Sample author sidebar with social links.
-- Sample footer links.
-- Paginated home page.
-- Archive pages for posts grouped by year, category, and tag.
-- Sample about page.
-- Sample 404 page.
-- Site wide search.
+- `src/pages/` — routes: `index.astro` (home), `projects.astro`, `writing.astro`
+- `src/layouts/BaseLayout.astro` — shared nav, footer, and page shell
+- `public/styles/global.css` — shared styles (nav, footer, cards, buttons)
+- `public/scripts/site.js` — shared behaviour (lazy iframe loading, scroll reveal)
+- `public/notebooks/` — static HTML exports of Jupyter notebooks, embedded via iframe
+- `public/assets/` — images and PDFs referenced by the pages
 
-Replace sample content with your own and [configure as necessary](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
+## Development
 
----
+```
+npm install
+npm run dev      # local dev server
+npm run build    # build to dist/
+npm run preview  # preview the production build
+```
 
-## Troubleshooting
+## Deployment
 
-If you have a question about using Jekyll, start a discussion on the [Jekyll Forum](https://talk.jekyllrb.com/) or [StackOverflow](https://stackoverflow.com/questions/tagged/jekyll). Other resources:
-
-- [Ruby 101](https://jekyllrb.com/docs/ruby-101/)
-- [Setting up a Jekyll site with GitHub Pages](https://jekyllrb.com/docs/github-pages/)
-- [Configuring GitHub Metadata](https://github.com/jekyll/github-metadata/blob/master/docs/configuration.md#configuration) to work properly when developing locally and avoid `No GitHub API authentication could be found. Some fields may be missing or have incorrect data.` warnings.
+Pushing to `master` triggers `.github/workflows/deploy.yml`, which builds the
+site and publishes `dist/` to GitHub Pages.
