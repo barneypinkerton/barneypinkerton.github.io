@@ -11,10 +11,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <div class="card-meta">NYU Group Project · Deep Learning · 2026</div>
       <p>A head-to-head between Shazam's fingerprinting and LAION-CLAP's neural embeddings, stress-tested on ~18k degraded GTZAN tracks – noise, pitch shifts, lo-fi filtering, the works. Turns out pitch-shifting breaks both music-tuned models, while the generalist CLAP – never built for music at all – comes out on top.</p>
 
-      <button class="read-btn desktop-only" data-src="/notebooks/analysis.html">▶&nbsp; View notebook inline</button>
-      <a class="mobile-link mobile-only" href="/notebooks/analysis.html" target="_blank" rel="noopener noreferrer">View notebook →</a>
-      <div class="reader-frame desktop-only"></div>
-
       <div class="skills-list">
         <span class="skill-tag">Python</span>
         <span class="skill-tag">LAION-CLAP</span>
@@ -27,6 +23,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <span class="skill-tag">Evaluation Pipelines</span>
         <span class="skill-tag">Jupyter Notebooks</span>
       </div>
+
+      <div class="reader-frame desktop-only">
+        <iframe src="/notebooks/analysis.html" loading="lazy" sandbox="allow-scripts allow-same-origin"></iframe>
+      </div>
+      <a class="mobile-link mobile-only" href="/notebooks/analysis.html" target="_blank" rel="noopener noreferrer">View notebook →</a>
+
       <a href="https://github.com/barneypinkerton/Shazam-CLAP-Embedding-Analysis" target="_blank" rel="noopener noreferrer" class="card-link">View project on GitHub →</a>
     </div>
 
@@ -34,6 +36,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <h2>Discogs Recommendation Model</h2>
       <div class="card-meta">Personal · Machine Learning · 2025</div>
       <p>A personalised vinyl recommender built on the full Discogs catalog (~10GB of SQLite). It syncs my collection and wantlist, builds a candidate pool from label and artist affinity, then re-ranks using audio embeddings pulled from YouTube – so picks actually sound like what I own, not just what's tagged similarly. Community-hype caps keep it underground.</p>
+
       <div class="skills-list">
         <span class="skill-tag">Python</span>
         <span class="skill-tag">SQLite</span>
@@ -45,9 +48,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <span class="skill-tag">yt-dlp · ffmpeg</span>
         <span class="skill-tag">Claude Code</span>
       </div>
-      <button class="read-btn desktop-only" data-src="/notebooks/vinyl-profile.html">▶&nbsp; View collection profile</button>
+
+      <div class="reader-frame desktop-only">
+        <iframe src="/notebooks/vinyl-profile.html" loading="lazy" sandbox="allow-scripts allow-same-origin"></iframe>
+      </div>
       <a class="mobile-link mobile-only" href="/notebooks/vinyl-profile.html" target="_blank" rel="noopener noreferrer">View collection profile →</a>
-      <div class="reader-frame"></div>
+
       <a href="https://github.com/barneypinkerton/discogs-ml" target="_blank" rel="noopener noreferrer" class="card-link">View project on GitHub →</a>
     </div>
 
