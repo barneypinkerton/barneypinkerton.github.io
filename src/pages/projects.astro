@@ -21,7 +21,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
 
       <div class="reader-frame desktop-only">
-        <iframe src="/notebooks/analysis.html" loading="lazy" sandbox="allow-scripts allow-same-origin"></iframe>
+        <iframe src="/notebooks/analysis.html" loading="lazy" title="Shazam vs CLAP analysis notebook"></iframe>
       </div>
       <a class="mobile-link mobile-only" href="/notebooks/analysis.html" target="_blank" rel="noopener noreferrer">View notebook →</a>
 
@@ -42,7 +42,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
 
       <div class="reader-frame desktop-only">
-        <iframe src="/notebooks/vinyl-profile.html" loading="lazy" sandbox="allow-scripts allow-same-origin"></iframe>
+        <iframe src="/notebooks/vinyl-profile.html" loading="lazy" title="Vinyl collection profile notebook"></iframe>
       </div>
       <a class="mobile-link mobile-only" href="/notebooks/vinyl-profile.html" target="_blank" rel="noopener noreferrer">View collection profile →</a>
 
@@ -52,7 +52,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <div class="card reveal">
       <h2>Apple Music Listening Analytics Dashboard</h2>
       <div class="card-meta">Personal · Data Visualisation · 2025</div>
-      <p>A Tableau Public (i.e free tier with limited functionality) dashboard visualising my listening habits across songs, artists, albums, and genres. Includes parameters, ranking logic, calculated fields, and an integrated UX-focused layout for fun/dynamic analysis – happy clicking!</p>
+      <p>A Tableau Public (i.e., free tier with limited functionality) dashboard visualising my listening habits across songs, artists, albums, and genres. Includes parameters, ranking logic, calculated fields, and an integrated UX-focused layout for fun/dynamic analysis – happy clicking!</p>
 
       <div class="skills-list">
         <span class="skill-tag">Tableau</span>
@@ -85,7 +85,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           <h4 class="analysis-subtitle">March 2026</h4>
           <p class="analysis-copy">
             This one is quite funny — my friends and I went and saw the Australian band Sticky Fingers late March at the Brooklyn Paramount. Clearly after that show all I could listen to
-            for the rest of the month was their 2013 breakout hit 'Learn to Fly'. 
+            for the rest of the month was their 2013 breakout hit 'Learn to Fly'.
           </p>
         </div>
 
@@ -93,7 +93,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           <h4 class="analysis-subtitle">April 2026</h4>
           <p class="analysis-copy">
             The return of Babyfather (one of Dean Blunt's many side projects). I inhaled 'icl' 100+ times in the last half of April alone. Whilst the song is aided by
-            being roughly 2 minutes long, its instantly catchy beat made it hard to break the loop. April was also the month I discovered bar italia and completed a round trip to Australia in 
+            being roughly 2 minutes long, its instantly catchy beat made it hard to break the loop. April was also the month I discovered bar italia and completed a round trip to Australia in
             under a week, where both outbound and return flights were on Monday, meaning there was lots of spare time flying to get into some new music.
           </p>
         </div>
@@ -102,18 +102,19 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   </div>
 </BaseLayout>
 
-<script is:inline>
-  // Tableau embed
-  (function () {
-    var container = document.getElementById('viz_apple_music');
-    if (!container) return;
-    var w = 960;
+<script>
+  // Tableau embed: desktop only (hidden below 768px), loaded once the viewport is wide enough.
+  const desktop = window.matchMedia('(min-width: 769px)');
 
-    var obj = document.createElement('object');
+  function loadTableau() {
+    const container = document.getElementById('viz_apple_music');
+    if (!container || container.childElementCount) return;
+
+    const obj = document.createElement('object');
     obj.className = 'tableauViz';
-    obj.style.cssText = 'width:' + w + 'px;height:827px;flex-shrink:0;';
+    obj.style.cssText = 'width:960px;height:827px;flex-shrink:0;';
 
-    var params = {
+    const params = {
       host_url: 'https%3A%2F%2Fpublic.tableau.com%2F',
       embed_code_version: '3',
       site_root: '',
@@ -128,17 +129,28 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       language: 'en-US',
       filter: 'publish=yes',
     };
-    Object.entries(params).forEach(function ([k, v]) {
-      var p = document.createElement('param');
-      p.name = k; p.value = v;
+    for (const [name, value] of Object.entries(params)) {
+      const p = document.createElement('param');
+      p.name = name;
+      p.value = value;
       obj.appendChild(p);
-    });
+    }
     container.appendChild(obj);
 
-    var s = document.createElement('script');
+    const s = document.createElement('script');
     s.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
     document.body.appendChild(s);
-  })();
+  }
+
+  if (desktop.matches) {
+    loadTableau();
+  } else {
+    desktop.addEventListener('change', function onChange(e) {
+      if (!e.matches) return;
+      desktop.removeEventListener('change', onChange);
+      loadTableau();
+    });
+  }
 </script>
 
 <style>

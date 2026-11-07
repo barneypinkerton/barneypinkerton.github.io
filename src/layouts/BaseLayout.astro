@@ -1,10 +1,19 @@
 ---
+import '../styles/global.css';
+
 interface Props {
   title?: string;
+  description?: string;
   hideFooter?: boolean;
 }
-const { title = 'Barney Pinkerton', hideFooter = false } = Astro.props;
+const {
+  title = 'Barney Pinkerton',
+  description = 'Barney Pinkerton — NYU Music Business & Music Technology student. Projects in music data, machine learning and analytics, plus essays on music and culture.',
+  hideFooter = false,
+} = Astro.props;
 const path = Astro.url.pathname;
+const canonical = new URL(path, Astro.site).href;
+const ogImage = new URL('/assets/images/headshot.jpg', Astro.site).href;
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -12,16 +21,27 @@ const path = Astro.url.pathname;
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{title}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonical} />
   <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
-  <link rel="stylesheet" href="/styles/global.css" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Barney Pinkerton" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:image" content={ogImage} />
+  <meta name="twitter:card" content="summary" />
+
+  <script is:inline>document.documentElement.classList.add('js');</script>
 </head>
 <body>
   <nav class="masthead">
     <div class="masthead__inner">
       <a href="/" class="site-title">Barney Pinkerton</a>
       <div class="nav-links">
-        <a href="/projects" class={path.startsWith('/projects') ? 'active' : ''}>Projects</a>
-        <a href="/writing" class={path.startsWith('/writing') ? 'active' : ''}>Writing</a>
+        <a href="/projects" class:list={{ active: path.startsWith('/projects') }} aria-current={path.startsWith('/projects') ? 'page' : undefined}>Projects</a>
+        <a href="/writing" class:list={{ active: path.startsWith('/writing') }} aria-current={path.startsWith('/writing') ? 'page' : undefined}>Writing</a>
       </div>
     </div>
   </nav>
@@ -41,6 +61,8 @@ const path = Astro.url.pathname;
     </footer>
   )}
 
-  <script src="/scripts/site.js" defer></script>
+  <script>
+    import '../scripts/site.js';
+  </script>
 </body>
 </html>

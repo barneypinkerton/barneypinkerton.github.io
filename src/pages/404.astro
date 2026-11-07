@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Page not found — Barney Pinkerton" description="This page doesn't exist.">
+  <div class="page-content not-found">
+    <h1>Page not found</h1>
+    <p class="page-intro">That link doesn't go anywhere – it may have moved or never existed.</p>
+    <p><a href="/">← Back home</a> · <a href="/projects">Projects</a> · <a href="/writing">Writing</a></p>
+  </div>
+</BaseLayout>
+
+<style>
+  .not-found { min-height: 50vh; }
+  .not-found a { font-weight: 500; color: #0f172a; }
+</style>
