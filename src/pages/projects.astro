@@ -63,11 +63,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
 
       <div class="tableau-wrap desktop-only">
-        <div id="viz_apple_music" style="position:relative; width:100%;"></div>
+        <div id="viz_apple_music"></div>
       </div>
-      <a class="mobile-link mobile-only" href="https://public.tableau.com/app/profile/barnaby.pinkerton/viz/AppleMusicDashboard_17647709521790/AppleMusicDashboard?publish=yes" target="_blank" rel="noopener noreferrer">View dashboard on Tableau Public →</a>
+      <a class="mobile-link mobile-only" href="https://public.tableau.com/app/profile/barnaby.pinkerton/viz/AppleMusicHistoricalAnalysis/Wrapped" target="_blank" rel="noopener noreferrer">View dashboard on Tableau Public →</a>
 
-      <a href="https://public.tableau.com/app/profile/barnaby.pinkerton/viz/AppleMusicDashboard_17647709521790/AppleMusicDashboard?publish=yes" target="_blank" rel="noopener noreferrer" class="card-link">Open full dashboard in Tableau Public →</a>
+      <a href="https://public.tableau.com/app/profile/barnaby.pinkerton/viz/AppleMusicHistoricalAnalysis/Wrapped" target="_blank" rel="noopener noreferrer" class="card-link">Open full dashboard in Tableau Public →</a>
 
       <div class="analysis-section">
         <h3 class="analysis-title">Story time / Analysis</h3>
@@ -106,19 +106,33 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   // Tableau embed: desktop only (hidden below 768px), loaded once the viewport is wide enough.
   const desktop = window.matchMedia('(min-width: 769px)');
 
+  // The dashboard has a fixed 1200x900 layout (+ ~27px toolbar), wider than the card,
+  // so render it at native size and scale it down to fit the available width.
+  const VIZ_W = 1200;
+  const VIZ_H = 927;
+
+  function fitTableau() {
+    const wrap = document.querySelector('.tableau-wrap');
+    const container = document.getElementById('viz_apple_music');
+    if (!wrap || !container || !wrap.clientWidth) return;
+    const scale = Math.min(1, wrap.clientWidth / VIZ_W);
+    container.style.transform = 'scale(' + scale + ')';
+    wrap.style.height = Math.ceil(VIZ_H * scale) + 'px';
+  }
+
   function loadTableau() {
     const container = document.getElementById('viz_apple_music');
     if (!container || container.childElementCount) return;
 
     const obj = document.createElement('object');
     obj.className = 'tableauViz';
-    obj.style.cssText = 'width:960px;height:827px;flex-shrink:0;';
+    obj.style.cssText = 'width:' + VIZ_W + 'px;height:' + VIZ_H + 'px;';
 
     const params = {
       host_url: 'https%3A%2F%2Fpublic.tableau.com%2F',
       embed_code_version: '3',
       site_root: '',
-      name: 'AppleMusicDashboard_17647709521790/AppleMusicDashboard',
+      name: 'AppleMusicHistoricalAnalysis/Wrapped',
       tabs: 'no',
       toolbar: 'yes',
       animate_transition: 'yes',
@@ -136,6 +150,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       obj.appendChild(p);
     }
     container.appendChild(obj);
+    fitTableau();
+    window.addEventListener('resize', fitTableau);
 
     const s = document.createElement('script');
     s.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
@@ -203,9 +219,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
   .tableau-wrap {
     margin: 16px 0;
-    overflow-x: auto;
-    display: flex;
-    justify-content: center;
+    overflow: hidden;
+  }
+
+  #viz_apple_music {
+    width: 1200px;
+    transform-origin: top left;
   }
 
   .analysis-section {
